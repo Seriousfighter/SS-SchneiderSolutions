@@ -1,0 +1,22 @@
+name: Deploy Nuxt App
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Acceder al VPS y actualizar la app
+        uses: appleboy/ssh-action@v0.1.10
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          script: |
+            cd /var/www/SS-SchneiderSolutions
+            git pull origin main
+            docker-compose up --build -d
