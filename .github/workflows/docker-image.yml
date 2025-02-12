@@ -1,4 +1,4 @@
-name: Deploy Nuxt App
+name: Deploy Schneider Solutions
 
 on:
   push:
@@ -17,6 +17,15 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
           script: |
+            # Navegar al directorio de la app
             cd /var/www/SS-SchneiderSolutions
-            git pull origin main
+
+            # Obtener la última versión del código desde el repositorio
+            git fetch --all
+            git reset --hard origin/main
+
+            # Construir y desplegar el contenedor con docker-compose
             docker-compose up --build -d
+
+            # (Opcional) Verifica si todo se levantó correctamente
+            docker ps
