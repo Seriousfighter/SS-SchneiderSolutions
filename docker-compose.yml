@@ -1,5 +1,4 @@
 
-version: '3'
 services:
   ss-schneiderservices:
     build: 
@@ -8,8 +7,6 @@ services:
     container_name: schneiderservices
     ports:
       - "7000:7000"
-    volumes:
-      - ./app:/app
     environment:
       - NODE_ENV=${NODE_ENV:-development}
       - HOST=0.0.0.0
