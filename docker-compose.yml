@@ -26,15 +26,15 @@ services:
       dockerfile: Dockerfile
     container_name: prueba.schneiderservices
     ports:
-      - "7001:7000"
+      - "8000:8000"
     environment:
       - NODE_ENV=${NODE_ENV:-development}
       - HOST=0.0.0.0
-      - PORT=7001
+      - PORT=8000
       - NITRO_HOST=0.0.0.0
-      - NITRO_PORT=7001
+      - NITRO_PORT=8000
       - APP_NAME=${APP_NAME:-Equipo.Guru}
-      - API_BASE_URL=${API_BASE_URL:-http://localhost:7001/api}
+      - API_BASE_URL=${API_BASE_URL:-http://localhost:8000/api}
       - AUTH_SECRET=${AUTH_SECRET:-your-secret-key}
     networks:
       - nuxt-network
