@@ -1,0 +1,28 @@
+services:
+  equipo.guru:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    container_name: equipo.guru
+    ports:
+      - "${PORT:-3000}:${PORT:-3000}"
+    environment:
+      - NODE_ENV=${NODE_ENV:-production}
+      - HOST=${HOST:-0.0.0.0}
+      - PORT=${PORT:-3000}
+      - APP_NAME=${APP_NAME:-Equipo.Guru}
+      - API_BASE_URL=${API_BASE_URL:-http://localhost:3000/api}
+      - AUTH_SECRET=${AUTH_SECRET:-your-secret-key}
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.output
+    networks:
+      - nuxt-network
+    restart: unless-stopped
+    env_file:
+      - .env  # Carga las variables desde el archivo .env
+
+networks:
+  nuxt-network:
+    driver: bridge

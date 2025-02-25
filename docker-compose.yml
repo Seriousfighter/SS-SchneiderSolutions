@@ -22,7 +22,7 @@ services:
 
   prueba-ss-schneiderservices:
     build: 
-      context: .
+      context: equipo.guru/
       dockerfile: Dockerfile
     container_name: prueba.schneiderservices
     ports:
