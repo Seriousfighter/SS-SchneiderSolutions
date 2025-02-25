@@ -7,7 +7,7 @@
         <p class="text-grey-shades-60 mb-[15px]">En EquipoDOTGuru, creemos que el éxito digital se construye con talento especializado. Por eso, contamos con equipos expertos en cada área clave del desarrollo digital. Descubre cómo cada equipo puede impulsar tu proyecto:</p>
       </div>
     </section>
-    <GridDisplay class="xl:max-w-[70%] max-w-[90%] mx-auto mt-8">
+    <GridDisplay class="xl:max-w-[70%] max-w-[90%] mx-auto mt-8 text-center">
         <template #grid1  >
             <span class="text-6xl mb-4">💻</span>
             <h3 class="text-white-guru text-[24px] font-semibold my-[15px]">Equipo Frontend</h3>
