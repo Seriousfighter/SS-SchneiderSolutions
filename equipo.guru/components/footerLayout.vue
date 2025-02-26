@@ -2,7 +2,7 @@
   <div class="flex flex-col  text-grey-shades-60 max-w-[90%] mx-auto mt-10">
         <!---top footer-->
         <div class="relative flex flex-row justify-between">
-            <logoGuru size="100" class="absolute bottom-[-28px] left-0"/>
+            <logoGuru size="100" class="absolute bottom-[-25px] left-0"/>
             <div class="absolute right-0 bottom-0 flex flex-row">
                 <p class="my-auto text-white-guru font-semibold m-2">Seguinos</p>
                 <a href="https://co.linkedin.com/company/equipodotguru">

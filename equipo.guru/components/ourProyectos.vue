@@ -12,12 +12,14 @@
     <template #grid1>
       <div>
         <div class="relative flex flex-col justify-between items-center">
-          <img src="../assets/images/proyecto1.png" alt="Project 1" class="w-full h-auto object-contain rounded-[10px]" />
-          <BtnMore class="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 mb-0 backdrop-blur-md bg-transparent text-[11px]">
+          <div class=" w-full overflow-hidden rounded-[10px]" >
+            <img src="../assets/images/proyecto1.png" alt="Project 2" class="w-full max-h-[305px] min-h-[150px] scale-125 object-cover " />
+          </div>
+          <BtnMore class="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 mb-0 backdrop-blur-md bg-white-guru/30 text-[11px]">
             Ver proyecto
           </BtnMore>
         </div>
-        <div class="mt-4">
+        <div class="mt-12">
           <nuxt-link to="#" class="text-green-guru">Bambic.com.ar</nuxt-link>
           <div class="flex justify-between">
             <h3 class="text-white-guru text-[18px] font-bold my-[15px]">Categoria: Desarrollo Web</h3>
@@ -31,16 +33,18 @@
 
     <template #grid2>
       <div>
-        <div class="relative flex flex-col justify-between items-center">
-          <img src="../assets/images/proyecto2.png" alt="Project 2" class="w-full max-h-[250px] object-contain rounded-[10px]" />
-          <BtnMore class="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 mb-0 backdrop-blur-md bg-transparent text-[11px]">
+        <div class="relative flex flex-col justify-between items-center ">
+          <div class=" w-full overflow-hidden rounded-[10px]" >
+            <img src="../assets/images/proyecto2.png" alt="Project 2" class="w-full max-h-[305px] min-h-[150px] scale-125 object-cover " />
+          </div>
+          <BtnMore class="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 mb-0 backdrop-blur-md  bg-white-guru/30 text-[11px]">
             Ver proyecto
           </BtnMore>
         </div>
-        <div class="mt-4">
+        <div class="mt-12">
           <nuxt-link to="#" class="text-green-guru">Calorify.com.ar</nuxt-link>
           <div class="flex justify-between">
-            <h3 class="text-white-guru text-[18px] font-bold my-[15px]">Categoria: Desarrollo de Aplicaciones Web</h3>
+            <h3 class="text-white-guru text-[18px] font-bold my-[15px]">Categoria: Aplicaciones Web</h3>
             <h3 class="text-white-guru text-[18px] font-bold my-[15px]">Diciembre 2024</h3>
           </div>
           <p class="text-grey-shades-60">A través de una interfaz intuitiva y un algoritmo de cálculo preciso, Calorify ofrece una experiencia personalizada que ayuda a los usuarios a comprender mejor sus necesidades calóricas diarias.</p>
@@ -51,12 +55,14 @@
     <template #grid3>
       <div>
         <div class="relative flex flex-col justify-between items-center">
-          <img src="../assets/images/proyecto3.png" alt="Project 3" class="w-full h-auto object-contain rounded-[10px]" />
-          <BtnMore class="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 mb-0 backdrop-blur-md bg-transparent text-[11px]">
+          <div class=" w-full overflow-hidden rounded-[10px]" >
+            <img src="../assets/images/proyecto3.png" alt="Project 2" class="w-full max-h-[305px] min-h-[150px] object-cover " />
+          </div>
+          <BtnMore class="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 mb-0 backdrop-blur-md  bg-white-guru/30 text-[11px]">
             Ver proyecto
           </BtnMore>
         </div>
-        <div class="mt-4">
+        <div class="mt-12">
           <nuxt-link to="#" class="text-green-guru">Vitalpropiedades.com.ar</nuxt-link>
           <div class="flex justify-between">
             <h3 class="text-white-guru text-[18px] font-bold my-[15px]">Categoria: Diseño y Desarrollo Web</h3>
@@ -70,12 +76,14 @@
     <template #grid4>
       <div>
         <div class="relative flex flex-col justify-between items-center">
-          <img src="../assets/images/proyecto1.png" alt="Project 4" class="w-full h-auto object-contain rounded-[10px]" />
-          <BtnMore class="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 mb-0 backdrop-blur-md bg-transparent text-[11px]">
+          <div class=" w-full overflow-hidden rounded-[10px]" >
+            <img src="../assets/images/proyecto4.png" alt="Project 4" class="w-full h-[305px] object-cover rounded-[10px]" />
+          </div>
+          <BtnMore class="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 mb-0 backdrop-blur-md  bg-white-guru/30 text-[11px]">
             Ver proyecto
           </BtnMore>
         </div>
-        <div class="mt-4">
+        <div class="mt-12">
           <nuxt-link to="#" class="text-green-guru">Rebici.com.ar</nuxt-link>
           <div class="flex justify-between">
             <h3 class="text-white-guru text-[18px] font-bold my-[15px]">Categoria: Diseño de logotipo</h3>
