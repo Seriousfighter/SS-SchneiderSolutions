@@ -14,7 +14,16 @@
                 </div>
             </div>
         </div>
-        <div class="bg-green-guru h-[150px] md:h-auto">
+        <div class="md:h-auto md:pt-0">
+            <video 
+        
+                src="../assets/video/video.mp4"
+                autoplay
+                muted
+                loop
+                playsinline
+                class="w-full h-full  md:pt-0 object-cover"
+            ></video>
             <!-- Right column content -->
         </div>
     </div>
