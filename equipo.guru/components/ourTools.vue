@@ -1,7 +1,7 @@
 <template>
     <section class="md:max-w-[60%] m-auto max-w-[90%] mt-16 md:mt-[100px]">
       <div class="flex flex-col justify-center items-center w-full text-center">
-        <h2 class="text-green-guru text-[29px] font-bold mb-[15px]">Herramientas que <span class="text-white-guru block md:inline">Desarrollamos</span></h2>
+         <h2 :class="`text-green-guru text-[${titleSize}px] font-bold mb-[15px]`">Herramientas que <span class="text-white-guru block md:inline">Desarrollamos</span></h2>
         <p class="text-grey-shades-60 mb-[15px]">En Equipo.Guru, no solo nos enfocamos en soluciones a medida, sino que también desarrollamos herramientas innovadoras que optimizan y facilitan diversas tareas.</p>
       </div>
     </section>
@@ -39,3 +39,12 @@
  </GridDisplay>
 </section>
 </template>
+
+<script setup>
+defineProps({
+  titleSize: {
+  type: Number,
+  default: 29
+  }
+})
+</script>

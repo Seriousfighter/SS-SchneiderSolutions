@@ -1,5 +1,7 @@
 <template>
-    <div class="pt-4">
-        <h1 class="mt-20 text-green-guru"> proyectos</h1>
-    </div>
+    
+    <section class="pt-4 ">
+        <OurProyectos :title-size="64"/>
+    </section>
+    
 </template>

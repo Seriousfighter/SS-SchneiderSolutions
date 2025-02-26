@@ -1,5 +1,5 @@
 <template>
-    <div class="pt-4">
-        <h1 class="mt-20 text-green-guru"> herramientas</h1>
-    </div>
+  <section class="pt-4 ">
+        <OurTools :title-size="64"/>
+    </section>
 </template>

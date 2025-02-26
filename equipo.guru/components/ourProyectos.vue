@@ -1,7 +1,7 @@
 <template>
     <section class="md:max-w-[60%] m-auto max-w-[90%] mt-16 md:mt-[100px]">
       <div class="flex flex-col justify-center items-center w-full text-center">
-        <h2 class="text-green-guru text-[29px] font-bold mb-[15px]">Nuestros <span class="text-white-guru block md:inline">Proyectos</span></h2>
+        <h2 :class="`text-green-guru text-[${titleSize}px] font-bold mb-[15px]`">Nuestros <span class="text-white-guru block md:inline">Proyectos</span></h2>
         <p class="text-grey-shades-60 mb-[15px]">Colaboramos con clientes de diferentes sectores, siempre con el objetivo 
           de ofrecer soluciones efectivas y bien diseñadas.</p>
       </div>
@@ -15,12 +15,14 @@
           <div class=" w-full overflow-hidden rounded-[10px]" >
             <img src="../assets/images/proyecto1.png" alt="Project 2" class="w-full max-h-[305px] min-h-[150px] scale-125 object-cover " />
           </div>
-          <BtnMore class="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 mb-0 backdrop-blur-md bg-white-guru/30 text-[11px]">
-            Ver proyecto
-          </BtnMore>
+          <a href="https://bambic.com.ar/">
+            <BtnMore class="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 mb-0 backdrop-blur-md bg-white-guru/30 text-[11px]">
+              Ver proyecto
+            </BtnMore>
+          </a>
         </div>
         <div class="mt-12">
-          <nuxt-link to="#" class="text-green-guru">Bambic.com.ar</nuxt-link>
+          <nuxt-link to="https://bambic.com.ar/" class="text-green-guru">Bambic.com.ar</nuxt-link>
           <div class="flex justify-between">
             <h3 class="text-white-guru text-[18px] font-bold my-[15px]">Categoria: Desarrollo Web</h3>
             <h3 class="text-white-guru text-[18px] font-bold my-[15px]">Jul 2024</h3>
@@ -42,7 +44,7 @@
           </BtnMore>
         </div>
         <div class="mt-12">
-          <nuxt-link to="#" class="text-green-guru">Calorify.com.ar</nuxt-link>
+          <nuxt-link to="#" class="text-green-guru">Calorify</nuxt-link>
           <div class="flex justify-between">
             <h3 class="text-white-guru text-[18px] font-bold my-[15px]">Categoria: Aplicaciones Web</h3>
             <h3 class="text-white-guru text-[18px] font-bold my-[15px]">Diciembre 2024</h3>
@@ -58,12 +60,14 @@
           <div class=" w-full overflow-hidden rounded-[10px]" >
             <img src="../assets/images/proyecto3.png" alt="Project 2" class="w-full max-h-[305px] min-h-[150px] object-cover " />
           </div>
-          <BtnMore class="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 mb-0 backdrop-blur-md  bg-white-guru/30 text-[11px]">
-            Ver proyecto
-          </BtnMore>
+          <a href="https://vitalpropiedades.com.ar/">
+            <BtnMore class="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 mb-0 backdrop-blur-md  bg-white-guru/30 text-[11px]">
+              Ver proyecto
+            </BtnMore>
+          </a>
         </div>
         <div class="mt-12">
-          <nuxt-link to="#" class="text-green-guru">Vitalpropiedades.com.ar</nuxt-link>
+          <nuxt-link to="https://vitalpropiedades.com.ar/" class="text-green-guru">Vitalpropiedades.com.ar</nuxt-link>
           <div class="flex justify-between">
             <h3 class="text-white-guru text-[18px] font-bold my-[15px]">Categoria: Diseño y Desarrollo Web</h3>
             <h3 class="text-white-guru text-[18px] font-bold my-[15px]">Enero 2022</h3>
@@ -84,7 +88,7 @@
           </BtnMore>
         </div>
         <div class="mt-12">
-          <nuxt-link to="#" class="text-green-guru">Rebici.com.ar</nuxt-link>
+          <nuxt-link to="#" class="text-green-guru">Rebici</nuxt-link>
           <div class="flex justify-between">
             <h3 class="text-white-guru text-[18px] font-bold my-[15px]">Categoria: Diseño de logotipo</h3>
             <h3 class="text-white-guru text-[18px] font-bold my-[15px]">Enero 2022</h3>
@@ -96,3 +100,11 @@
   </GridDisplay>
 </section>
 </template>
+<script setup>
+defineProps({
+  titleSize: {
+  type: Number,
+  default: 29
+  }
+})
+</script>
