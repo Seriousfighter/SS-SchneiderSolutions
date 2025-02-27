@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://equipo.guru/sitemap.xml
+Sitemap: http://prueba.ss-schneiderservices.com/sitemap.xml
