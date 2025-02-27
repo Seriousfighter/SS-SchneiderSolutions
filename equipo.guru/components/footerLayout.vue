@@ -35,10 +35,10 @@
           </div>
           <div class="flex flex-col min-w-[50%] md:min-w-0 mb-4">
               <p class="text-white-guru font-semibold">Proyectos</p>
-              <nuxt-link to="">Bambic.com</nuxt-link>
+              <nuxt-link to="https://bambic.com.ar/">Bambic.com</nuxt-link>
               <nuxt-link to="">Calorify</nuxt-link>
-              <nuxt-link to="">Vitalpropiedades.com</nuxt-link>
-              <NuxtLink to=""> REBICIE</NuxtLink>
+              <nuxt-link to="https://vitalpropiedades.com.ar/">Vitalpropiedades.com</nuxt-link>
+              <NuxtLink to="https://www.upwork.com/agencies/equipodotguru/modal-portfolio-project?pageTitle=Logo%20Design&preventDismiss=false&_modalInfo=%5B%7B%22navType%22%3A%22modal%22,%22title%22%3A%22Logo%20Design%22,%22modalId%22%3A%221740580872233%22,%22channelName%22%3A%22modal-portfolio-project%22,%22preventDismiss%22%3Afalse%7D%5D&nav_dir=pop"> REBICIE</NuxtLink>
               <NuxtLink to=""> Ver más</NuxtLink>
           </div>
           <div class="flex flex-col min-w-[50%] md:min-w-0 mb-4">

@@ -30,6 +30,7 @@
           <span class="text-6xl mb-4">🛠️</span>
           <h3 class="text-white-guru text-[24px] font-semibold my-[15px]">Equipo de Soporte</h3>
           <p class="text-grey-shades-60 mb-[15px]">Brindamos soluciones rápidas y efectivas para asegurar el funcionamiento continuo de tus sistemas. Servicios: Soporte de Software (Frontend, Backend y servidores), Test manuales, funcionales y automatizados, Test de Seguridad</p>
+          
           <BtnMore class="md:mt-0 mt-6">Saber más</BtnMore>
         </template>
     </GridDisplay>
