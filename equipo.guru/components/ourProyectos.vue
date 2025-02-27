@@ -37,7 +37,7 @@
       <div>
         <div class="relative flex flex-col justify-between items-center ">
           <div class=" w-full overflow-hidden rounded-[10px]" >
-            <NuxtImg src="/assets/images/proyecto2.png" alt="Project 2" loading="lazy" format="avif" class="w-full max-h-[305px] min-h-[150px] scale-125 object-cover " />
+            <NuxtImg src="proyecto2.png" alt="Project 2" loading="lazy" format="avif" class="w-full max-h-[305px] min-h-[150px] scale-125 object-cover " />
           </div>
           <BtnMore class="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 mb-0 backdrop-blur-md  bg-white-guru/30 text-[11px]">
             Ver proyecto
