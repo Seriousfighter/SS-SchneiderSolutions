@@ -8,7 +8,8 @@
         </div>
         <div class="text-center mt-8">
             <p class="text-white-guru text-[14px] md:text-[24px] mb-4">Desbloquea tu Potencial Digital Hoy</p>
-            <BtnGreen @click="console.log('click')" class="text-[16px] md:text-[24px]">Comencemos</BtnGreen>
+            
+            <NuxtLink to="contact"><BtnGreen class="text-[16px] md:text-[24px]">Comencemos</BtnGreen></NuxtLink>
         </div>
     </ConteinerBlack>
 </template>

@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxt/test-utils/module',
     '@nuxtjs/sitemap',
+    '@nuxt/image',
   ],
   app: {
     head: {
@@ -56,5 +57,19 @@ export default defineNuxtConfig({
   sitemap: {
     siteUrl: 'http://prueba.ss-schneidereservices.com',
     exclude: ['/admin/**']
+  },
+  image: {
+    // Opciones de configuración
+    dir: 'assets/images',
+    provider: 'ipx',
+    quality: 80,
+    format: ['webp', 'avif', 'jpg'],
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+    }
   }
 })

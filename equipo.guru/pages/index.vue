@@ -1,21 +1,21 @@
 <template>
   <JsonLd :data="{
-  '@context': 'https://schema.org',
-  '@type': 'Organization',
-  'name': 'EquipoDOTGuru',
-  'description': 'Soluciones digitales a medida para potenciar tu proyecto.',
-  'url': 'https://equipo.guru',
-  'logo': 'https://equipo.guru/logo.png',
-  'sameAs': [
-    'https://linkedin.com/company/equipodotguru',
-    'https://twitter.com/equipodotguru'
-  ],
-  'contactPoint': {
-    '@type': 'ContactPoint',
-    'telephone': '+1-123-456-7890',
-    'contactType': 'customer service'
-  }
-}" />
+      '@context': 'https://schema.org',
+      '@type': 'Organization',
+      'name': 'EquipoDOTGuru',
+      'description': 'Soluciones digitales a medida para potenciar tu proyecto.',
+      'url': 'https://equipo.guru',
+      'logo': 'https://equipo.guru/logo.png',
+      'sameAs': [
+        'https://linkedin.com/company/equipodotguru',
+        'https://twitter.com/equipodotguru'
+      ],
+      'contactPoint': {
+        '@type': 'ContactPoint',
+        'telephone': '+1-123-456-7890',
+        'contactType': 'customer service'
+      }
+    }" />
   <div class="relative">
     <HeroSection />
     <section class="md:max-w-[60%] m-auto max-w-[90%] mt-16 md:mt-[100px]">

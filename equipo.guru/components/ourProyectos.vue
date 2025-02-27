@@ -13,7 +13,7 @@
       <div>
         <div class="relative flex flex-col justify-between items-center">
           <div class=" w-full overflow-hidden rounded-[10px]" >
-            <img src="../assets/images/proyecto1.png" alt="Project 2" class="w-full max-h-[305px] min-h-[150px] scale-125 object-cover " />
+            <NuxtImg src="/proyecto1.png" alt="Project 1" loading="lazy" format="avif" class="w-full max-h-[305px] min-h-[150px] scale-125 object-cover " />
           </div>
           <a href="https://bambic.com.ar/">
             <BtnMore class="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 mb-0 backdrop-blur-md bg-white-guru/30 text-[11px]">
@@ -37,7 +37,7 @@
       <div>
         <div class="relative flex flex-col justify-between items-center ">
           <div class=" w-full overflow-hidden rounded-[10px]" >
-            <img src="../assets/images/proyecto2.png" alt="Project 2" class="w-full max-h-[305px] min-h-[150px] scale-125 object-cover " />
+            <NuxtImg src="/proyecto2.png" alt="Project 2" loading="lazy" format="avif" class="w-full max-h-[305px] min-h-[150px] scale-125 object-cover " />
           </div>
           <BtnMore class="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 mb-0 backdrop-blur-md  bg-white-guru/30 text-[11px]">
             Ver proyecto
@@ -58,7 +58,7 @@
       <div>
         <div class="relative flex flex-col justify-between items-center">
           <div class=" w-full overflow-hidden rounded-[10px]" >
-            <img src="../assets/images/proyecto3.png" alt="Project 2" class="w-full max-h-[305px] min-h-[150px] object-cover " />
+            <NuxtImg src="/proyecto3.png" loading="lazy" format="avif" alt="Project 2" class="w-full max-h-[305px] min-h-[150px] object-cover " />
           </div>
           <a href="https://vitalpropiedades.com.ar/">
             <BtnMore class="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 mb-0 backdrop-blur-md  bg-white-guru/30 text-[11px]">
@@ -81,7 +81,7 @@
       <div>
         <div class="relative flex flex-col justify-between items-center">
           <div class=" w-full overflow-hidden rounded-[10px]" >
-            <img src="../assets/images/proyecto4.png" alt="Project 4" class="w-full h-[305px] object-cover rounded-[10px]" />
+            <NuxtImg src="../assets/images/proyecto4.png" loading="lazy" format="avif" alt="Project 4" class="w-full h-[305px] object-cover rounded-[10px]" />
           </div>
           <a href="https://www.upwork.com/agencies/equipodotguru/modal-portfolio-project?pageTitle=Logo%20Design&preventDismiss=false&_modalInfo=%5B%7B%22navType%22%3A%22modal%22,%22title%22%3A%22Logo%20Design%22,%22modalId%22%3A%221740580872233%22,%22channelName%22%3A%22modal-portfolio-project%22,%22preventDismiss%22%3Afalse%7D%5D&nav_dir=pop">
           <BtnMore class="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 mb-0 backdrop-blur-md  bg-white-guru/30 text-[11px]">

@@ -41,12 +41,7 @@
               <NuxtLink to="https://www.upwork.com/agencies/equipodotguru/modal-portfolio-project?pageTitle=Logo%20Design&preventDismiss=false&_modalInfo=%5B%7B%22navType%22%3A%22modal%22,%22title%22%3A%22Logo%20Design%22,%22modalId%22%3A%221740580872233%22,%22channelName%22%3A%22modal-portfolio-project%22,%22preventDismiss%22%3Afalse%7D%5D&nav_dir=pop"> REBICIE</NuxtLink>
               <NuxtLink to=""> Ver más</NuxtLink>
           </div>
-          <div class="flex flex-col min-w-[50%] md:min-w-0 mb-4">
-              <p class="text-white-guru font-semibold">CareersDOTGuru</p>
-              <nuxt-link to="">Busquedas</nuxt-link>
-              <nuxt-link to="">Beneficios</nuxt-link>
-              <nuxt-link to="">Referencia de empleados</nuxt-link>
-          </div>
+          
       </div>
       <!---bottom footer-->
       <div class="flex flex-col items-center justify-around w-full p-6 md:flex-row md:justify-between">
