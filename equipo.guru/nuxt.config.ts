@@ -34,7 +34,7 @@ export default defineNuxtConfig({
         
         // Twitter
         { name: 'twitter:card', content: 'summary_large_image' },
-        { name: 'twitter:url', content: 'https://equipo.guru/' },
+        { name: 'twitter:url', content: 'https://x.com/EquipoDotGuru' },
         { name: 'twitter:title', content: 'EquipoDOTGuru - Soluciones Digitales A Medida' },
         { name: 'twitter:description', content: 'Soluciones digitales a medida para potenciar tu proyecto. Equipos especializados en frontend, backend, diseño y soporte.' },
         { name: 'twitter:image', content: 'https://equipo.guru/twitter-image.jpg' },
