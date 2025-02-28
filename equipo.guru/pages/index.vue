@@ -20,7 +20,7 @@
     <HeroSection />
     <section class="md:max-w-[60%] m-auto max-w-[90%] mt-16 md:mt-[100px]">
       <div class="flex flex-col justify-center items-center w-full text-center">
-        <h2 class="text-green-guru text-[40px] font-semibold mb-[15px]">Trabajamos en Equipo <span class="text-white-guru block">para Potenciar tu Proyecto 🚀</span></h2>
+        <h2 class="text-green-guru text-[48px] font-semibold mb-[15px]">Trabajamos en Equipo <span class="text-white-guru block">para Potenciar tu Proyecto 🚀</span></h2>
         <p class="text-grey-shades-60 mb-[15px]">En EquipoDOTGuru, creemos que el éxito digital se construye con talento especializado. Por eso, contamos con equipos expertos en cada área clave del desarrollo digital. Descubre cómo cada equipo puede impulsar tu proyecto:</p>
       </div>
     </section>
@@ -51,7 +51,7 @@
           <BtnMore class="md:mt-0 mt-6">Saber más</BtnMore>
         </template>
     </GridDisplay>
-   <OurProyectos />
+   <OurProyectos :title-size="48" />
    <OurTools />
    <CtaStart class="mt-20"></CtaStart>
   

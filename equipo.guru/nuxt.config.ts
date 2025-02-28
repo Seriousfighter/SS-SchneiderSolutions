@@ -55,7 +55,7 @@ export default defineNuxtConfig({
     }
   },
   sitemap: {
-    siteUrl: 'http://prueba.ss-schneidereservices.com',
+    siteUrl: 'http://https://equipo.guru/.com',
     exclude: ['/admin/**']
   },
   image: {

@@ -10,7 +10,9 @@
                 </div>
                 <div class="mx-auto md:mx-0">
                     <h3 class="text-white-guru mb-[15px] ">Desbloquea tu Potencial Digital Hoy</h3>
-                    <BtnGreen>Comencemos</BtnGreen>
+                    <NuxtLink to="contact">
+                        <BtnGreen>Comencemos</BtnGreen>
+                    </NuxtLink>
                 </div>
             </div>
         </div>

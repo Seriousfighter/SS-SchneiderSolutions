@@ -11,7 +11,7 @@
    <template #grid1>
      <div>
        <div class="flex flex-col justify-between items-center">
-         <NuxtImg src="tool1.png" loading="lazy" format="avif" alt="Project 1" class="w-[150px] h-[150px] object-cover rounded-full" />
+         <NuxtImg src="public/tool1.png" format="avif" alt="tool-toktoken" class="w-[150px] h-[150px] object-cover rounded-full" />
          <h3 class="text-green-guru text-[24px] font-bold my-[15px]">
            TikToken
          </h3>
@@ -25,7 +25,7 @@
    <template #grid2>
      <div>
        <div class="flex flex-col justify-between items-center">
-         <NuxtImg src="tool2.png" loading="lazy" format="avif" alt="Project 1" class="w-[150px] h-[150px] object-cover rounded-full" />
+         <NuxtImg src="tool2.png" format="avif" alt="tool-reels 1" class="w-[150px] h-[150px] object-cover rounded-full" />
          <h3 class="text-green-guru text-[24px] font-bold my-[15px]">
            Reels
          </h3>
