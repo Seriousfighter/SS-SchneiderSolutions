@@ -59,12 +59,22 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 import frontendTeam from '~/components/frontendTeam.vue';
 import backendTeam from '~/components/backendTeam.vue';
 import desingTeam from '~/components/desingTeam.vue';
+import supportTeam from '~/components/supportTeam.vue';  // Make sure this import exists
 
+// Get the team from URL query parameter
+const route = useRoute();
 const activeTeam = ref('frontend');
+
+onMounted(() => {
+  const teamParam = route.query.team as string;
+  if (teamParam && ['frontend', 'backend', 'design', 'support'].includes(teamParam)) {
+    activeTeam.value = teamParam;
+  }
+});
 
 const showTeam = (team: string) => {
   activeTeam.value = team;

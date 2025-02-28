@@ -11,14 +11,16 @@
    <template #grid1>
      <div>
        <div class="flex flex-col justify-between items-center">
-         <NuxtImg src="public/tool1.png" format="avif" alt="tool-toktoken" class="w-[150px] h-[150px] object-cover rounded-full" />
+         <NuxtImg src="tool1.png" format="avif" alt="tool-toktoken" class="w-[150px] h-[150px] object-cover rounded-full" />
          <h3 class="text-green-guru text-[24px] font-bold my-[15px]">
            TikToken
          </h3>
        </div>
        <div class="mt-4 flex flex-col justify-between text-center items-center ">
          <p class="text-grey-shades-60 mb-10">Ya sea de manera individual o en lote, Tiktoken permite gestionar presupuestos y tomar decisiones informadas al conocer el costo exacto de cada consulta.</p>
+         <NuxtLink to="https://tiktoken.equipo.guru/" target="_blank">
          <BtnMore> Ir a TikToken</BtnMore>
+        </NuxtLink>
        </div>
      </div>
    </template>
@@ -32,7 +34,9 @@
        </div>
        <div class="mt-4 flex flex-col justify-between text-center items-center ">
          <p class="text-grey-shades-60 mb-10">Esta herramienta permite a los usuarios cargar imágenes y videos, elegir un audio de fondo, añadir un logo y un texto, y generar un video final con transici</p>
-         <BtnMore> Ir a Reels</BtnMore>
+         <NuxtLink to="https://reels.equipo.guru/" target="_blank">
+            <BtnMore> Ir a Reels</BtnMore>
+         </NuxtLink>
        </div>
      </div>
    </template>

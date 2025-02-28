@@ -29,30 +29,37 @@
             <span class="text-6xl mb-4">💻</span>
             <h3 class="text-white-guru text-[24px] font-semibold my-[15px]">Equipo Frontend</h3>
             <p class="text-grey-shades-60 mb-[15px]">Diseñamos interfaces intuitivas y que elevan la experiencia del usuario. Tecnologías: JavaScript, HTML5, CSS3, TailwindCSS, React, VueJS</p>
-            <BtnMore class="md:mt-0 mt-6">Saber más</BtnMore>
+            <NuxtLink to="/equipos?team=frontend">
+                <BtnMore class="md:mt-0 mt-6">Saber más</BtnMore>
+            </NuxtLink>
         </template>
         <template #grid2>
           <span class="text-6xl mb-4">⚙️</span>
           <h3 class="text-white-guru text-[24px] font-semibold my-[15px]">Equipo Backend</h3>
           <p class="text-grey-shades-60 mb-[15px]">Construimos sistemas sólidos y eficientes que garantizan seguridad, escalabilidad y alto rendimiento. Tecnologías: PHP, NodeJS, Python, MySQL, PostgreSQL, Amazon Web Services, Google Cloud Platform, API integration, Upgrade Legacy Software</p>
-          <BtnMore class="md:mt-0 mt-6">Saber más</BtnMore>
+          <NuxtLink to="equipos/?team=backend">
+            <BtnMore class="md:mt-0 mt-6">Saber más</BtnMore>
+          </NuxtLink>
         </template>
         <template #grid3>
           <span class="text-6xl mb-4">🎨</span>
           <h3 class="text-white-guru text-[24px] font-semibold my-[15px]">Equipo de Diseño</h3>
           <p class="text-grey-shades-60 mb-[15px]">Creamos interfaces que optimizan la experiencia del usuario y consolidan la conexión con tu marca. Nos especializamos en diseño web, creación de logotipos, branding y edición de video.</p>
-          <BtnMore class="md:mt-0 mt-6">Saber más</BtnMore>
+          <NuxtLink to="/equipos?team=design">
+              <BtnMore class="md:mt-0 mt-6">Saber más</BtnMore>
+          </NuxtLink>
         </template>
         <template #grid4>
           <span class="text-6xl mb-4">🛠️</span>
           <h3 class="text-white-guru text-[24px] font-semibold my-[15px]">Equipo de Soporte</h3>
           <p class="text-grey-shades-60 mb-[15px]">Brindamos soluciones rápidas y efectivas para asegurar el funcionamiento continuo de tus sistemas. Servicios: Soporte de Software (Frontend, Backend y servidores), Test manuales, funcionales y automatizados, Test de Seguridad</p>
-          
-          <BtnMore class="md:mt-0 mt-6">Saber más</BtnMore>
+          <NuxtLink to="/equipos?team=support">
+              <BtnMore class="md:mt-0 mt-6">Saber más</BtnMore>
+          </NuxtLink>
         </template>
     </GridDisplay>
    <OurProyectos :title-size="48" />
-   <OurTools />
+   <OurTools :title-size="48" />
    <CtaStart class="mt-20"></CtaStart>
   
   </div>
