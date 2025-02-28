@@ -5,16 +5,33 @@
             <logoGuru size="100" class="absolute bottom-[-25px] left-0"/>
             <div class="absolute right-0 bottom-0 flex flex-row">
                 <p class="my-auto text-white-guru font-semibold m-2">Seguinos</p>
-                <NuxtLink to="https://co.linkedin.com/company/equipodotguru" target="_blank">
-                <div class="bg-gradient-to-b from-grey-shades-50 to-grey-shades-6 rounded-full m-2 p-1 hover:bg-gradient-to-b hover:from-grey-shades-6 hover:to-grey-shades-50">
+                <NuxtLink 
+                  to="https://co.linkedin.com/company/equipodotguru" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  aria-label="Visítanos en LinkedIn" 
+                  title="LinkedIn">
+                  <span class="bg-gradient-to-b from-grey-shades-50 to-grey-shades-6 
+                              rounded-full m-2 p-1 hover:bg-gradient-to-b 
+                              hover:from-grey-shades-6 hover:to-grey-shades-50 
+                              flex items-center justify-center">
                     <lnSVG size="24" class="m-1"/>
-                </div>
-              </NuxtLink> 
-              <NuxtLink to="https://x.com/EquipoDotGuru" target="_blank">
-                <div class=" bg-gradient-to-b from-grey-shades-50 to-grey-shades-6 rounded-full m-2 p-1 hover:bg-gradient-to-b hover:from-grey-shades-6 hover:to-grey-shades-50">
-                    <XSvg size="24" class="m-1"/>       
-                </div>
-              </NuxtLink>
+                  </span>
+                </NuxtLink>
+
+                <NuxtLink 
+                  to="https://x.com/EquipoDotGuru" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  aria-label="Síguenos en X (Twitter)" 
+                  title="Twitter / X">
+                  <span class="bg-gradient-to-b from-grey-shades-50 to-grey-shades-6 
+                              rounded-full m-2 p-1 hover:bg-gradient-to-b 
+                              hover:from-grey-shades-6 hover:to-grey-shades-50 
+                              flex items-center justify-center">
+                    <XSvg size="24" class="m-1"/>
+                  </span>
+                </NuxtLink>
             </div>
         </div>        
       <!---middle footer-->

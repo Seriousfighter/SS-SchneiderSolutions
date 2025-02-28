@@ -58,9 +58,14 @@ watch(
   >
     <!-- Logo Section -->
     <div class="flex items-center gap-4">
-      <NuxtLink to="/">
-        <LogoGuru />
-      </NuxtLink>
+      <NuxtLink 
+                  to="https://co.linkedin.com/company/equipodotguru" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  aria-label="Visítan nuestra web" 
+                  title="EquipoDotGuru">
+                 <LogoGuru />
+                </NuxtLink>
       <h2 
     class="font-bold"
     :class="titleTextClass"
