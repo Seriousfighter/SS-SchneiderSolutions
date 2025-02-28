@@ -17,6 +17,9 @@ export default defineNuxtConfig({
       charset: 'utf-8',
       viewport: 'width=device-width, initial-scale=1',
       title: 'EquipoDOTGuru - Soluciones Digitales A Medida',
+      htmlAttrs: {
+        lang: 'es'  // or 'en' for English, etc.
+      },
       meta: [
         { name: 'description', content: 'En EquipoDOTGuru, creemos en el poder transformador de las soluciones digitales. Nuestro equipo de expertos está dedicado a ayudar a empresas como la tuya a prosperar en el dinámico mundo digital.' },
         { name: 'keywords', content: 'desarrollo web, desarrollo de software, diseño web, frontend, backend, soporte técnico, equipo digital' },
