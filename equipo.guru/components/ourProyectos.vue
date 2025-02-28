@@ -12,8 +12,13 @@
     <template #grid1>
       <div>
         <div class="relative flex flex-col justify-between items-center">
-          <div class=" w-full overflow-hidden rounded-[10px]" >
-            <NuxtImg src="proyecto1.png" alt="Project 1"  format="avif" class="w-full max-h-[305px] min-h-[150px] scale-125 object-cover " />
+          <div class="w-full h-[305px] overflow-hidden rounded-[10px]" >
+            <NuxtImg 
+              src="proyecto1.png" 
+              alt="Project 1" 
+              format="avif" 
+              class="w-full h-full object-cover" 
+            />
           </div>
           <NuxtLink to="https://bambic.com.ar/" target="_blank">
             <BtnMore class="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 mb-0 backdrop-blur-md bg-white-guru/30 text-[11px]">
@@ -35,12 +40,17 @@
 
     <template #grid2>
       <div>
-        <div class="relative flex flex-col justify-between items-center ">
-          <div class=" w-full overflow-hidden rounded-[10px]" >
-            <NuxtImg src="proyecto2.png" alt="Project 2"  format="avif" class="w-full max-h-[305px] min-h-[150px] scale-125 object-cover " />
+        <div class="relative flex flex-col justify-between items-center">
+          <div class="w-full h-[305px] overflow-hidden rounded-[10px]">
+            <NuxtImg 
+              src="proyecto2.png" 
+              alt="Project 2" 
+              format="avif" 
+              class="w-full h-full object-cover" 
+            />
           </div>
           <NuxtLink to="" target="_blank">
-            <BtnMore class="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 mb-0 backdrop-blur-md  bg-white-guru/30 text-[11px]">
+            <BtnMore class="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 mb-0 backdrop-blur-md bg-white-guru/30 text-[11px]">
               Ver proyecto
             </BtnMore>
           </NuxtLink>
@@ -59,14 +69,19 @@
     <template #grid3>
       <div>
         <div class="relative flex flex-col justify-between items-center">
-          <div class=" w-full overflow-hidden rounded-[10px]" >
-            <NuxtImg src="proyecto3.png"  format="avif" alt="Project 2" class="w-full max-h-[305px] min-h-[150px] object-cover " />
+          <div class="w-full h-[305px] overflow-hidden rounded-[10px]">
+            <NuxtImg 
+              src="proyecto3.png" 
+              alt="Project 3" 
+              format="avif" 
+              class="w-full h-full object-cover" 
+            />
           </div>
           <NuxtLink to="https://vitalpropiedades.com.ar/" target="_blank">
-            <BtnMore class="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 mb-0 backdrop-blur-md  bg-white-guru/30 text-[11px]">
+            <BtnMore class="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 mb-0 backdrop-blur-md bg-white-guru/30 text-[11px]">
               Ver proyecto
             </BtnMore>
-          </NuxtLink> 
+          </NuxtLink>
         </div>
         <div class="mt-12">
           <nuxt-link to="https://vitalpropiedades.com.ar/"  targe="_blank" class="text-green-guru">Vitalpropiedades.com.ar</nuxt-link>
@@ -82,15 +97,19 @@
     <template #grid4>
       <div>
         <div class="relative flex flex-col justify-between items-center">
-          <div class=" w-full overflow-hidden rounded-[10px]" >
-            <NuxtImg src="proyecto4.png"  format="avif" alt="Project 4" class="w-full h-[305px] object-cover rounded-[10px]" />
+          <div class="w-full h-[305px] overflow-hidden rounded-[10px]">
+            <NuxtImg 
+              src="proyecto4.png" 
+              alt="Project 4" 
+              format="avif" 
+              class="w-full h-full object-cover" 
+            />
           </div>
           <NuxtLink to="https://www.upwork.com/agencies/equipodotguru/modal-portfolio-project?pageTitle=Logo%20Design&preventDismiss=false&_modalInfo=%5B%7B%22navType%22%3A%22modal%22,%22title%22%3A%22Logo%20Design%22,%22modalId%22%3A%221740580872233%22,%22channelName%22%3A%22modal-portfolio-project%22,%22preventDismiss%22%3Afalse%7D%5D&nav_dir=pop" target="_blank">
-          <BtnMore class="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 mb-0 backdrop-blur-md  bg-white-guru/30 text-[11px]">
-            Ver proyecto
-          </BtnMore>
-        </NuxtLink>
-        
+            <BtnMore class="absolute bottom-[-20px] left-1/2 transform -translate-x-1/2 mb-0 backdrop-blur-md bg-white-guru/30 text-[11px]">
+              Ver proyecto
+            </BtnMore>
+          </NuxtLink>
         </div>
         <div class="mt-12">
           <nuxt-link to="https://www.upwork.com/agencies/equipodotguru/modal-portfolio-project?pageTitle=Logo%20Design&preventDismiss=false&_modalInfo=%5B%7B%22navType%22%3A%22modal%22,%22title%22%3A%22Logo%20Design%22,%22modalId%22%3A%221740580872233%22,%22channelName%22%3A%22modal-portfolio-project%22,%22preventDismiss%22%3Afalse%7D%5D&nav_dir=pop" class="text-green-guru">Rebici</nuxt-link>
