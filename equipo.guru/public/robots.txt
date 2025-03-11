@@ -1,5 +1,0 @@
-
-User-agent: *
-Allow: /
-
-Sitemap: http://prueba.ss-schneiderservices.com/sitemap.xml
