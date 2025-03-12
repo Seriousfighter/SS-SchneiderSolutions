@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="flex flex-col justify-between h-screen">
     <headerlayout />
     <slot />
     <footerlayout />
