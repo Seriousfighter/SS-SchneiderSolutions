@@ -25,7 +25,7 @@ jobs:
         run: |
           ssh -o StrictHostKeyChecking=no ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'EOF'
             # Navegar al directorio de la aplicación en el servidor
-            cd /var/www/SS-SchneiderSolutions
+            cd /var/www/SS-SchneiderServices
 
             # Obtener la última versión del código
             git pull origin main
