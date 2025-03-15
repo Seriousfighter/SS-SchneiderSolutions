@@ -6,22 +6,40 @@ services:
       dockerfile: Dockerfile
     container_name: schneiderservices
     ports:
-      - "${PORT:-7000}:${PORT:-7000}"
+      - "7000:7000"
     environment:
       - NODE_ENV=${NODE_ENV:-development}
       - HOST=0.0.0.0
-      - PORT=${PORT:-7000}
+      - PORT=7000
       - NITRO_HOST=0.0.0.0
-      - NITRO_PORT=${PORT:-7000}
+      - NITRO_PORT=7000
       - APP_NAME=${APP_NAME:-Equipo.Guru}
       - API_BASE_URL=${API_BASE_URL:-http://localhost:7000/api}
       - AUTH_SECRET=${AUTH_SECRET:-your-secret-key}
     networks:
-      - schneider-network
+      - nuxt-network
     restart: unless-stopped
 
-  
+  prueba-ss-schneiderservices:
+    build: 
+      context: equipo.guru/
+      dockerfile: Dockerfile
+    container_name: prueba.schneiderservices
+    ports:
+      - "8000:8000"
+    environment:
+      - NODE_ENV=${NODE_ENV:-development}
+      - HOST=0.0.0.0
+      - PORT=8000
+      - NITRO_HOST=0.0.0.0
+      - NITRO_PORT=8000
+      - APP_NAME=${APP_NAME:-Equipo.Guru}
+      - API_BASE_URL=${API_BASE_URL:-http://localhost:8000/api}
+      - AUTH_SECRET=${AUTH_SECRET:-your-secret-key}
+    networks:
+      - nuxt-network
+    restart: unless-stopped
 
 networks:
-  schneider-network:
+  nuxt-network:
     driver: bridge
