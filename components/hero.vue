@@ -53,11 +53,11 @@
                 class="absolute inset-0 w-full h-full transition-opacity duration-700"
                 :class="activeSlide === 0 ? 'opacity-100' : 'opacity-0'"
               >
-                <img 
-                  src="@/assets/img/helix.webp" 
-                  alt="Schneider Services" 
-                  class="w-full h-full object-cover"
-                  onerror="this.onerror=null; this.src='https://placehold.co/600x600/1a1a1a/E1FF2D?text=SS-1'"
+                <NuxtImg 
+                  src="/img/helix.webp" 
+                  alt="Technology Services"  
+                  format="avif"
+                  class="w-full h-full object-cover" 
                 />
               </div>
               
@@ -67,12 +67,13 @@
                 class="absolute inset-0 w-full h-full transition-opacity duration-700"
                 :class="activeSlide === 1 ? 'opacity-100' : 'opacity-0'"
               >
-                <img 
-                  src="@/assets/img/helix2.webp" 
-                  alt="Technology Services" 
-                  class="w-full h-full object-cover"
-                  onerror="this.onerror=null; this.src='https://placehold.co/600x600/1a1a1a/E1FF2D?text=SS-2'"
-                />
+                
+                <NuxtImg 
+                  src="/img/helix2.webp" 
+                  alt="Technology Services"  
+                  format="avif"
+                  class="w-full h-full object-cover" 
+                  />
               </div>
               
               <!-- Image 3 -->
@@ -81,11 +82,11 @@
                 class="absolute inset-0 w-full h-full transition-opacity duration-700"
                 :class="activeSlide === 2 ? 'opacity-100' : 'opacity-0'"
               >
-                <img 
-                  src="@/assets/img/helix3.webp" 
-                  alt="Coding Solutions" 
-                  class="w-full h-full object-cover"
-                  onerror="this.onerror=null; this.src='https://placehold.co/600x600/1a1a1a/E1FF2D?text=SS-3'"
+                <NuxtImg 
+                    src="/img/helix3.webp" 
+                    alt="Technology Services"  
+                    format="avif"
+                    class="w-full h-full object-cover" 
                 />
               </div>
             </div>
