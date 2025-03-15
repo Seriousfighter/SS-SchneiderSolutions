@@ -8,7 +8,7 @@
     <div class="hidden md:block">
       <nav class="flex flex-row md:text-4xl justify-between gap-10">
         <navLink :page="home">Home</navLink>
-        <navLink :page="about">About</navLink>
+        <navLink :page="portfolio">Portfolio</navLink>
         <navLink :page="services">Services</navLink>
         <navLink :page="contact">Contact</navLink>
       </nav>
@@ -38,7 +38,7 @@
       </div>
       <nav class="flex flex-col space-y-6 text-2xl font-bebas mt-5">
         <navLink :page="home" @click="closeMenu">Home</navLink>
-        <navLink :page="about" @click="closeMenu">About</navLink>
+        <navLink :page="portfolio" @click="closeMenu">Portfolio</navLink>
         <navLink :page="services" @click="closeMenu">Services</navLink>
         <navLink :page="contact" @click="closeMenu">Contact</navLink>
       </nav>
@@ -51,7 +51,7 @@ import { ref } from 'vue'
 
 // Define the page routes
 const home = "/"
-const about = "/about"
+const portfolio = "/portfolio"
 const services = "/services"
 const contact = "/contact"
 
@@ -74,7 +74,3 @@ const closeMenu = () => {
   document.body.style.overflow = ''
 }
 </script>
-
-<style>
-/* Add any additional styles here if needed */
-</style>

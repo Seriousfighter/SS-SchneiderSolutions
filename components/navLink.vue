@@ -27,7 +27,7 @@ const isActive = computed(() => {
   return route.path === props.page
 })
 
-const handleClick = (event) => {
+const handleClick = (event: MouseEvent) => {
   emit('click', event)
 }
 </script>
