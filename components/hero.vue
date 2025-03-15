@@ -54,7 +54,7 @@
                 :class="activeSlide === 0 ? 'opacity-100' : 'opacity-0'"
               >
                 <NuxtImg 
-                  src="/img/helix.webp" 
+                  src="img/helix.webp" 
                   alt="Technology Services"  
                   format="avif"
                   class="w-full h-full object-cover" 
@@ -69,7 +69,7 @@
               >
                 
                 <NuxtImg 
-                  src="/img/helix2.webp" 
+                  src="img/helix2.webp" 
                   alt="Technology Services"  
                   format="avif"
                   class="w-full h-full object-cover" 
@@ -83,7 +83,7 @@
                 :class="activeSlide === 2 ? 'opacity-100' : 'opacity-0'"
               >
                 <NuxtImg 
-                    src="/img/helix3.webp" 
+                    src="img/helix3.webp" 
                     alt="Technology Services"  
                     format="avif"
                     class="w-full h-full object-cover" 

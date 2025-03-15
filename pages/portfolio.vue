@@ -89,7 +89,7 @@ const projects = [
   {
     title: "Equipo Guru",
     description: "A modern SSR website implementation with dynamic content management and optimized performance for a professional services firm.",
-    images: ["img4.webp", "img5.webp"],
+    images: ["img4.webp", "img4.webp"],
     tags: ["Web Development", "SSR", "UX Design"],
     category: "Web Development"
   },
