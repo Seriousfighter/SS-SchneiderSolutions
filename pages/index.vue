@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full bg-gray-900 min-h-[200vh]">
+  <div class="w-full bg-gray-900 ">
     <hero />
     <weDoPortfolio /> 
     <cta />

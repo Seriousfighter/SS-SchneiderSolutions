@@ -1,22 +1,31 @@
 <template>
-  <div class="w-full min-h-screen">
+  <div :class="[
+    'w-full transition-all duration-1000',
+    isScrolled ? 'min-h-fit' : 'min-h-screen'
+  ]">
     <!-- Hero Section -->
-    <section class="sticky top-0 z-10 min-h-screen w-full flex items-center py-8 px-4 md:px-8">
+    <section class="sticky top-0 z-10 w-full flex items-center px-4 md:px-8 overflow-hidden"
+      :class="[
+        'transition-all duration-1000 ease-in-out',
+        isScrolled ? 'min-h-0 py-4' : 'min-h-screen py-8'
+      ]">
       <div class="w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mt-0 lg:gap-12 items-center">
         <!-- Left Side: Content -->
         <div :class="[ 
-          'transition-all duration-700 ease-in-out', 
+          'transition-all duration-1000 ease-out transform', 
           isScrolled ? 'md:col-span-2 backdrop-blur-xl mt-0' : ''
         ]">
-          <div>
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+          <div :class="['transition-all duration-1000', isScrolled ? 'transform-none' : '']">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 transition-all duration-700"
+              :class="{ 'md:text-3xl lg:text-4xl mb-4': isScrolled }">
               <span class="text-[#E1FF2D]">SS</span>-SCHNEIDER SERVICES
             </h1>
-            <p class="text-lg text-gray-300 mb-8 max-w-xl">
+            <p class="text-lg text-gray-300 mb-8 max-w-xl transition-all duration-700"
+              :class="{ 'md:text-base mb-4': isScrolled }">
               Expert technical services for modern businesses. 
               We deliver innovative solutions tailored to your unique needs.
             </p>
-            <div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
+            <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 transition-all duration-700">
               <button class="px-6 py-3 bg-[#E1FF2D] text-black font-semibold rounded hover:bg-[#d4f909] transform hover:-translate-y-1 transition-all">
                 Our Services
               </button>
@@ -27,10 +36,12 @@
           </div>
         </div>
         
-        <!-- Right Side: Image Carousel - Will completely disappear when scrolled -->
+        <!-- Right Side: Image Carousel - Will smoothly disappear when scrolled -->
         <div :class="[
-          'transition-all duration-700 transform ease-in-out', 
-          isScrolled ? 'md:opacity-0 md:translate-x-full md:invisible' : ''
+          'transition-all duration-1000 transform ease-in-out', 
+          isScrolled 
+            ? 'md:opacity-0 md:translate-x-1/4 md:scale-90 md:invisible md:h-0 md:w-0 md:overflow-hidden' 
+            : 'md:translate-x-0 md:scale-100'
         ]">
           <!-- Carousel Container -->
           <div class="rounded-xl overflow-hidden border-2 border-[#E1FF2D]/20 aspect-square relative bg-gradient-to-br from-gray-800 to-gray-900">
@@ -39,7 +50,7 @@
               <!-- Image 1 -->
               <div 
                 v-show="activeSlide === 0" 
-                class="absolute inset-0 w-full h-full transition-opacity duration-500"
+                class="absolute inset-0 w-full h-full transition-opacity duration-700"
                 :class="activeSlide === 0 ? 'opacity-100' : 'opacity-0'"
               >
                 <img 
@@ -53,7 +64,7 @@
               <!-- Image 2 -->
               <div 
                 v-show="activeSlide === 1" 
-                class="absolute inset-0 w-full h-full transition-opacity duration-500"
+                class="absolute inset-0 w-full h-full transition-opacity duration-700"
                 :class="activeSlide === 1 ? 'opacity-100' : 'opacity-0'"
               >
                 <img 
@@ -67,7 +78,7 @@
               <!-- Image 3 -->
               <div 
                 v-show="activeSlide === 2" 
-                class="absolute inset-0 w-full h-full transition-opacity duration-500"
+                class="absolute inset-0 w-full h-full transition-opacity duration-700"
                 :class="activeSlide === 2 ? 'opacity-100' : 'opacity-0'"
               >
                 <img 
@@ -160,18 +171,28 @@ function prevSlide() {
 // Auto-advance carousel
 let carouselInterval;
 
-// Scroll handler
+// Scroll handler with throttling for smoother transitions
+let lastScrollTime = 0;
 function handleScroll() {
-  // Get scroll position
-  const scrollPosition = window.scrollY || document.documentElement.scrollTop;
-  
-  // Determine if we've scrolled enough to change layout
-  isScrolled.value = scrollPosition > 100;
+  const now = Date.now();
+  if (now - lastScrollTime > 50) { // Throttle to every 50ms
+    lastScrollTime = now;
+    
+    // Get scroll position
+    const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+    
+    // Use smooth transition with a threshold
+    if (scrollPosition > 100 && !isScrolled.value) {
+      isScrolled.value = true;
+    } else if (scrollPosition < 50 && isScrolled.value) {
+      isScrolled.value = false;
+    }
+  }
 }
 
 onMounted(() => {
   // Add event listener
-  window.addEventListener('scroll', handleScroll);
+  window.addEventListener('scroll', handleScroll, { passive: true });
   
   // Initial scroll check (in case page loads scrolled down)
   handleScroll();

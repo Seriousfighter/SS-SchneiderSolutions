@@ -1,5 +1,5 @@
 <template>
-  <div class="my-24 p-12 bg-gray-800/50 rounded-xl border border-gray-700">
+  <div class="mx-4 my-24 p-12 bg-gray-800/50 rounded-xl border border-gray-700">
     <div class="text-center">
       <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Ready to Start Your Project?</h2>
       <p class="text-gray-300 max-w-2xl mx-auto mb-8">Let's discuss your needs and how we can help you achieve your goals.</p>
