@@ -169,7 +169,7 @@ function prevSlide() {
 }
 
 // Auto-advance carousel
-let carouselInterval;
+let carouselInterval: NodeJS.Timer | number;
 
 // Scroll handler with throttling for smoother transitions
 let lastScrollTime = 0;
