@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     '~/assets/css/fonts.css',
   ],
   image: {
-    dir: 'assets',
+    
     provider: 'ipx',
     quality: 80,
     format: ['webp', 'avif', 'jpg'],
