@@ -20,12 +20,13 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.VPS_SSH_KEY }}  # Clave privada SSH configurada en los Secrets
 
-      # Paso 3: Conectar al servidor VPS y desplegar la aplicación
+      # Paso 3: Conectar al VPS y desplegar la aplicación
       - name: Deploy to VPS
         run: |
           ssh -o StrictHostKeyChecking=no ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'EOF'
             # Navegar al directorio de la aplicación en el servidor
-            cd /var/www/SS-SchneiderServices
+            cd /var/www/SS-SchneiderServices/SS-SchneiderSolutions
+
 
             # Obtener la última versión del código
             git pull origin main
