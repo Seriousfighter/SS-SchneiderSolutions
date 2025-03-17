@@ -1,1 +1,28 @@
+# robots.txt for SS-SchneiderServices
 
+User-agent: *
+Allow: /
+Allow: /services/
+Allow: /portfolio/
+Allow: /contact/
+Allow: /about/
+Allow: /img/
+Allow: /assets/
+
+# Prevent indexing of potential admin areas
+Disallow: /admin/
+Disallow: /dashboard/
+
+# Prevent indexing of development-related files
+Disallow: /_nuxt/
+Disallow: /.nuxt/
+Disallow: /_ipx/
+
+# Prevent crawling of API endpoints
+Disallow: /api/
+
+# Sitemap location - add this when your sitemap is ready
+Sitemap: https://ss-schneiderservices.com/sitemap.xml
+
+# Set reasonable crawl rate to avoid server load
+Crawl-delay: 5
