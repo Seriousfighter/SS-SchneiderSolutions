@@ -6,7 +6,7 @@
 
     <!-- Desktop Navigation -->
     <div class="hidden md:block">
-      <nav class="flex flex-row md:text-4xl justify-between gap-10">
+      <nav class="flex flex-row md:text-6xl justify-between gap-10">
         <navLink :page="home">Home</navLink>
         <navLink :page="portfolio">Portfolio</navLink>
         <navLink :page="services">Services</navLink>
