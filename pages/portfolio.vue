@@ -75,36 +75,36 @@ const projects = [
     title: "Escuelita Virtual",
     description: "A comprehensive SaaS CRM solution for educational institutions, featuring student management, grading systems, and parent communication tools.",
     // Just pass the file names, not full paths
-    images: ["img1.webp", "img2.webp"], 
-    tags: ["Web App", "Education", "CRM"],
+    images: ["../projects/escuelita/img1.png", "../projects/escuelita/img2.png", "../projects/escuelita/img3.png", "../projects/escuelita/img4.png"], 
+    tags: ["Web App", "Education", "CRM","Saas"],
     category: "Web Development"
   },
   {
     title: "Kaput!",
     description: "Advanced control application for poultry farms, with real-time monitoring, automated feeding systems, and analytics dashboard.",
-    images: ["img3.webp"],
-    tags: ["IoT", "Agriculture", "Dashboard"],
+    images: ["../projects/Kaput/img1.png","../projects/Kaput/img2.png","../projects/Kaput/img3.png"],
+    tags: ["IoT", "Agriculture", "Dashboard","Under cosntruction"],
     category: "IoT Solutions"
   },
   {
     title: "Equipo Guru",
     description: "A modern SSR website implementation with dynamic content management and optimized performance for a professional services firm.",
-    images: ["img4.webp", "img4.webp"],
+    images: ["../projects/EquipoGuru/img1.png", "../projects/EquipoGuru/img2.png","../projects/EquipoGuru/img3.png"],
     tags: ["Web Development", "SSR", "UX Design"],
     category: "Web Development"
   },
   {
-    title: "Financial Dashboard",
-    description: "Interactive financial analytics platform with real-time market data, portfolio tracking, and personalized investment recommendations.",
-    images: ["finance-1.jpg"],
-    tags: ["Finance", "Dashboard", "Analytics"],
+    title: "Domus",
+    description: "CRM for real state administration. ",
+    images: ["../projects/Domus/img1.png"],
+    tags: ["Real State", "CRM", "Web App","Under cosntruction"],
     category: "Data Visualization"
   },
   {
-    title: "Health Tracker App",
-    description: "Mobile application for health monitoring, fitness tracking, and nutritional guidance with personalized wellness plans.",
-    images: ["health-1.jpg", "health-2.jpg"],
-    tags: ["Mobile App", "Healthcare", "UX Design"],
+    title: "Baires Vive",
+    description: "Design implementation in existing project. We took the desing, the existing code and made it work together.",
+    images: ["../projects/BairesVive/img1.png", "../projects/BairesVive/img2.png","../projects/BairesVive/img3.png"],
+    tags: ["Design Integration", "Frontend Development", "UI Implementation"],
     category: "Mobile Development"
   },
   {

@@ -37,20 +37,20 @@ export default defineNuxtConfig({
         { property: 'og:url', content: 'https://ss-schneiderservices.com/' },
         { property: 'og:title', content: 'SS-SchneiderServices - Technology Solutions' },
         { property: 'og:description', content: 'SS-SchneiderServices delivers innovative technical solutions for modern businesses. Expert technology services tailored to your unique needs.' },
-        { property: 'og:image', content: 'https://ss-schneiderservices.com/logo.svg' },
+        { property: 'og:image', content: 'https://ss-schneiderservices.com/Logo.svg' },
         
         // Twitter
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:url', content: 'https://twitter.com/SSSchneiderServ' },
         { name: 'twitter:title', content: 'SS-SchneiderServices - Technology Solutions' },
         { name: 'twitter:description', content: 'SS-SchneiderServices delivers innovative technical solutions for modern businesses. Expert technology services tailored to your unique needs.' },
-        { name: 'twitter:image', content: 'https://ss-schneiderservices.com/logo.svg' },
+        { name: 'twitter:image', content: 'https://ss-schneiderservices.com/Logo.svg' },
       ],
       link: [
         { 
           rel: 'icon', 
-          type: 'image/svg+xml', 
-          href: '/SS-SchneiderServices.svg' 
+          type: 'image/png', 
+          href: '/Logo1.png' 
         },
       ],
     }

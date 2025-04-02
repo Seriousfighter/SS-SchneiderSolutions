@@ -5,12 +5,16 @@
         Contact our team today to discuss how our services can help you achieve your business goals.
       </p>
       <div class="flex flex-col sm:flex-row justify-center gap-4">
-        <button class="px-8 py-4 bg-[#E1FF2D] text-black font-semibold rounded hover:bg-[#d4f909] transform hover:-translate-y-1 transition-all">
-          Get Started
-        </button>
-        <button class="px-8 py-4 border border-[#E1FF2D] text-[#E1FF2D] font-semibold rounded hover:bg-[#E1FF2D]/10 transform hover:-translate-y-1 transition-all">
-          Contact Us
-        </button>
+        <NuxtLink to="contact">
+          <button class="px-8 py-4 bg-[#E1FF2D] text-black font-semibold rounded hover:bg-[#d4f909] transform hover:-translate-y-1 transition-all">
+            Get Started
+          </button>
+        </NuxtLink>
+        <NuxtLink to="contact">
+          <button class="px-8 py-4 border border-[#E1FF2D] text-[#E1FF2D] font-semibold rounded hover:bg-[#E1FF2D]/10 transform hover:-translate-y-1 transition-all">
+            Contact Us
+          </button>
+        </NuxtLink>
       </div>
     </div>
 </template>

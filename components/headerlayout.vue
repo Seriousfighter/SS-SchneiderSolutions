@@ -1,7 +1,7 @@
 <template>
   <div class="px-4 md:px-10 md:py-4 flex flex-row items-center justify-between border-2 border-black h-15 text-green-ss font-bebas">
     <div>
-      <h1 class="text-2xl md:text-4xl">SS-SCHNEIDER SERVICES</h1>
+      <h1 class="text-2xl md:text-5xl">SS-SCHNEIDER SERVICES</h1>
     </div>
 
     <!-- Desktop Navigation -->

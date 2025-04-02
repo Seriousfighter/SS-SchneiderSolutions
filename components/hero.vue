@@ -26,12 +26,16 @@
               We deliver innovative solutions tailored to your unique needs.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 transition-all duration-700">
+              <NuxtLink to="services">
               <button class="px-6 py-3 bg-[#E1FF2D] text-black font-semibold rounded hover:bg-[#d4f909] transform hover:-translate-y-1 transition-all">
                 Our Services
               </button>
+            </NuxtLink>
+              <NuxtLink to="contact">
               <button class="px-6 py-3 border-2 border-[#E1FF2D] text-[#E1FF2D] font-semibold rounded hover:bg-[#E1FF2D]/10 transform hover:-translate-y-1 transition-all">
                 Contact Us
               </button>
+            </NuxtLink>
             </div>
           </div>
         </div>
@@ -170,7 +174,7 @@ function prevSlide() {
 }
 
 // Auto-advance carousel
-let carouselInterval: NodeJS.Timer | number;
+let carouselInterval: ReturnType<typeof setInterval>;
 
 // Scroll handler with throttling for smoother transitions
 let lastScrollTime = 0;
