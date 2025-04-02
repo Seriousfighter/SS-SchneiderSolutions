@@ -61,6 +61,9 @@
                 src="/img/helix.webp" 
                 alt="Technology Services"  
                 format="webp"
+                width="400"
+                loading="eager"
+                fetchpriority="high"
                 quality="80"
                 placeholder
                 sizes="sm:100vw md:50vw lg:400px"
@@ -79,6 +82,9 @@
                 src="/img/helix2.webp" 
                 alt="Technology Services"  
                 format="webp"
+                width="400"
+                loading="eager"
+                fetchpriority="high"
                 quality="80"
                 placeholder
                 sizes="sm:100vw md:50vw lg:400px"
@@ -95,11 +101,14 @@
               <NuxtImg 
                 src="/img/helix3.webp" 
                 alt="Technology Services"  
-                format="webp"
+                fformat="webp"
+                width="400"
+                loading="eager"
+                fetchpriority="high"
                 quality="80"
                 placeholder
                 sizes="sm:100vw md:50vw lg:400px"
-                class="w-full h-full object-cover" 
+                class="w-full h-full object-cover"  
               />
               </div>
             </div>
