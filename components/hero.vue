@@ -57,11 +57,12 @@
                 class="absolute inset-0 w-full h-full transition-opacity duration-700"
                 :class="activeSlide === 0 ? 'opacity-100' : 'opacity-0'"
               >
-              <img 
+              <NuxtImg 
                 src="/img/helix.webp" 
-                alt="Technology Services"  
+                width="600"
+                height="400"
                 format="webp"
-                width="400"
+                quality="70"
                 loading="eager"
                 class="w-full h-full object-cover" 
               />
@@ -74,14 +75,15 @@
                 :class="activeSlide === 1 ? 'opacity-100' : 'opacity-0'"
               >
                 
-              <img 
-                src="/img/helix2.webp" 
-                alt="Technology Services"  
-                format="webp"
-                width="400"
-                loading="eager"
-                class="w-full h-full object-cover" 
-              />
+              <NuxtImg 
+                  src="/img/helix2.webp" 
+                  width="600"
+                  height="400"
+                  format="webp"
+                  quality="70"
+                  loading="eager"
+                  class="w-full h-full object-cover" 
+                />
               </div>
               
               <!-- Image 3 -->
@@ -90,11 +92,12 @@
                 class="absolute inset-0 w-full h-full transition-opacity duration-700"
                 :class="activeSlide === 2 ? 'opacity-100' : 'opacity-0'"
               >
-              <img 
+              <NuxtImg 
                 src="/img/helix3.webp" 
-                alt="Technology Services"  
+                width="600"
+                height="400"
                 format="webp"
-                width="400"
+                quality="70"
                 loading="eager"
                 class="w-full h-full object-cover" 
               />

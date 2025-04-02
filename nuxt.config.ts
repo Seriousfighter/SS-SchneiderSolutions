@@ -1,4 +1,3 @@
-
 export default defineNuxtConfig({
   compatibilityDate: "2024-11-01",
   devtools: { enabled: true },
@@ -7,7 +6,6 @@ export default defineNuxtConfig({
     '~/assets/css/fonts.css',
   ],
   image: {
-    // Image module options
     provider: 'ipx',
     quality: 80,
     format: ['webp'],
@@ -18,9 +16,11 @@ export default defineNuxtConfig({
       lg: 1024,
       xl: 1280,
     },
-    // Enable caching
-    cacheMaxAge: 604800, // 1 week
-    // Enable presets for responsive images
+    cacheMaxAge: 2592000, // 30 days
+    staticFilePath: true,
+    modifiers: {
+      quality: process.env.NODE_ENV === 'production' ? 70 : 80,
+    },
     presets: {
       avatar: {
         modifiers: {
@@ -46,10 +46,30 @@ export default defineNuxtConfig({
     }
   },
   routeRules: {
-    // Cache images for better performance
     '/img/**': { 
       headers: {
-        'Cache-Control': 'public, max-age=604800, s-maxage=604800'
+        'Cache-Control': 'public, max-age=2592000, immutable'
+      },
+      static: true
+    },
+    '/api/**': {
+      cache: {
+        maxAge: 60 // 1 minute
+      }
+    },
+    '/**': {
+      cache: { 
+        maxAge: 30 // 30 seconds
+      }
+    }
+  },
+  nitro: {
+    prerender: {
+      routes: ['/']
+    },
+    runtimeConfig: {
+      memory: {
+        maxHeapSize: 512
       }
     }
   },
