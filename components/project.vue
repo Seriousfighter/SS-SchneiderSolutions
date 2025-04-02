@@ -9,7 +9,6 @@
         :alt="title"
         class="w-full h-full object-cover"
         placeholder
-        format="avif"
         @error="handleImageError"
       />
       
