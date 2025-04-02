@@ -23,6 +23,5 @@ ENV NUXT_INSTANCE_COUNT=1
 # Expose the port
 EXPOSE 7000
 
-# Use a process manager to handle crashes
-RUN npm install -g pm2
-CMD ["pm2-runtime", "./.output/server/index.mjs", "--instances", "1", "--exp-backoff-restart-delay=100"]
+
+CMD ["node", "./.output/server/index.mjs"]
