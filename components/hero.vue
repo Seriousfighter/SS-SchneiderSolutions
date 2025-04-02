@@ -57,12 +57,15 @@
                 class="absolute inset-0 w-full h-full transition-opacity duration-700"
                 :class="activeSlide === 0 ? 'opacity-100' : 'opacity-0'"
               >
-                <NuxtImg 
-                  src="img/helix.webp" 
-                  alt="Technology Services"  
-                  format="avif"
-                  class="w-full h-full object-cover" 
-                />
+              <NuxtImg 
+                src="/img/helix.webp" 
+                alt="Technology Services"  
+                format="webp"
+                quality="80"
+                placeholder
+                sizes="sm:100vw md:50vw lg:400px"
+                class="w-full h-full object-cover" 
+              />
               </div>
               
               <!-- Image 2 -->
@@ -72,12 +75,15 @@
                 :class="activeSlide === 1 ? 'opacity-100' : 'opacity-0'"
               >
                 
-                <NuxtImg 
-                  src="img/helix2.webp" 
-                  alt="Technology Services"  
-                  format="avif"
-                  class="w-full h-full object-cover" 
-                  />
+              <NuxtImg 
+                src="/img/helix2.webp" 
+                alt="Technology Services"  
+                format="webp"
+                quality="80"
+                placeholder
+                sizes="sm:100vw md:50vw lg:400px"
+                class="w-full h-full object-cover" 
+              />
               </div>
               
               <!-- Image 3 -->
@@ -86,12 +92,15 @@
                 class="absolute inset-0 w-full h-full transition-opacity duration-700"
                 :class="activeSlide === 2 ? 'opacity-100' : 'opacity-0'"
               >
-                <NuxtImg 
-                    src="img/helix3.webp" 
-                    alt="Technology Services"  
-                    format="avif"
-                    class="w-full h-full object-cover" 
-                />
+              <NuxtImg 
+                src="/img/helix3.webp" 
+                alt="Technology Services"  
+                format="webp"
+                quality="80"
+                placeholder
+                sizes="sm:100vw md:50vw lg:400px"
+                class="w-full h-full object-cover" 
+              />
               </div>
             </div>
             

@@ -7,16 +7,50 @@ export default defineNuxtConfig({
     '~/assets/css/fonts.css',
   ],
   image: {
-    
+    // Image module options
     provider: 'ipx',
     quality: 80,
-    format: ['webp', 'avif', 'jpg'],
+    format: ['webp'],
     screens: {
       xs: 320,
       sm: 640,
       md: 768,
       lg: 1024,
       xl: 1280,
+    },
+    // Enable caching
+    cacheMaxAge: 604800, // 1 week
+    // Enable presets for responsive images
+    presets: {
+      avatar: {
+        modifiers: {
+          format: 'webp',
+          width: 80,
+          height: 80
+        }
+      },
+      thumbnail: {
+        modifiers: {
+          format: 'webp',
+          width: 400,
+          height: 300
+        }
+      },
+      hero: {
+        modifiers: {
+          format: 'webp',
+          width: 600,
+          height: 400
+        }
+      }
+    }
+  },
+  routeRules: {
+    // Cache images for better performance
+    '/img/**': { 
+      headers: {
+        'Cache-Control': 'public, max-age=604800, s-maxage=604800'
+      }
     }
   },
   app: {
