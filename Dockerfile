@@ -23,5 +23,6 @@ ENV NUXT_INSTANCE_COUNT=1
 # Expose the port
 EXPOSE 7000
 
+# Use a process manager to handle crashes
 
 CMD ["node", "./.output/server/index.mjs"]
