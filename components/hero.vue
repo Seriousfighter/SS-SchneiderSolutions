@@ -58,8 +58,10 @@
                 :class="activeSlide === 0 ? 'opacity-100' : 'opacity-0'"
               >
               <NuxtImg 
-                src="/img/helix.avif" 
+                src="/img/helix.webp" 
                 alt="Technology Services"  
+                format="webp"
+                quality="80"
                 placeholder
                 sizes="sm:100vw md:50vw lg:400px"
                 class="w-full h-full object-cover" 
@@ -74,8 +76,10 @@
               >
                 
               <NuxtImg 
-                src="/img/helix2.avif" 
+                src="/img/helix2.webp" 
                 alt="Technology Services"  
+                format="webp"
+                quality="80"
                 placeholder
                 sizes="sm:100vw md:50vw lg:400px"
                 class="w-full h-full object-cover" 
@@ -89,8 +93,10 @@
                 :class="activeSlide === 2 ? 'opacity-100' : 'opacity-0'"
               >
               <NuxtImg 
-                src="/img/helix3.avif" 
+                src="/img/helix3.webp" 
                 alt="Technology Services"  
+                format="webp"
+                quality="80"
                 placeholder
                 sizes="sm:100vw md:50vw lg:400px"
                 class="w-full h-full object-cover" 

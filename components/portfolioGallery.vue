@@ -21,7 +21,7 @@
         <div class="group rounded-lg overflow-hidden transition-all hover:-translate-y-2">
           <div class="h-48 bg-gradient-to-r from-[#E1FF2D]/10 to-[#E1FF2D]/20 group-hover:from-[#E1FF2D]/20 group-hover:to-[#E1FF2D]/30">
             <NuxtImg 
-              src="./img/projects/escuelita/img1.avif" 
+              src="./img/projects/escuelita/img1.png" 
               alt="Escuelita crm 1" 
               class="w-full h-full object-cover"
               format="avif"
@@ -37,7 +37,7 @@
       <div class="group rounded-lg overflow-hidden transition-all hover:-translate-y-2">
         <div class="h-48 bg-gradient-to-r from-[#E1FF2D]/20 to-[#E1FF2D]/30 group-hover:from-[#E1FF2D]/30 group-hover:to-[#E1FF2D]/40">
           <NuxtImg 
-              src="./img/projects/Kaput/img1.avif" 
+              src="./img/projects/Kaput/img1.png" 
               alt="Kaput crm 1" 
               class="w-full h-full object-cover"
               format="avif"
@@ -53,7 +53,7 @@
       <div class="group rounded-lg overflow-hidden transition-all hover:-translate-y-2">
         <div class="h-48 bg-gradient-to-r from-[#E1FF2D]/30 to-[#E1FF2D]/40 group-hover:from-[#E1FF2D]/40 group-hover:to-[#E1FF2D]/50">
           <NuxtImg 
-              src="./img/projects/EquipoGuru/img1.avif" 
+              src="./img/projects/EquipoGuru/img1.png" 
               alt="Equipo guru ssr 1" 
               class="w-full h-full object-cover"
               format="avif"
@@ -69,7 +69,7 @@
       <div class="group rounded-lg overflow-hidden transition-all hover:-translate-y-2">
         <div class="h-48 bg-gradient-to-r from-[#E1FF2D]/40 to-[#E1FF2D]/50 group-hover:from-[#E1FF2D]/50 group-hover:to-[#E1FF2D]/60">
         <NuxtImg 
-              src="./img/projects/BairesVive/img1.avif" 
+              src="./img/projects/BairesVive/img1.png" 
               alt="BairesVive Integration 1" 
               class="w-full h-full object-cover"
               format="avif"

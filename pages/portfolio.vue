@@ -75,35 +75,35 @@ const projects = [
     title: "Escuelita Virtual",
     description: "A comprehensive SaaS CRM solution for educational institutions, featuring student management, grading systems, and parent communication tools.",
     // Just pass the file names, not full paths
-    images: ["../projects/escuelita/img1.avif", "../projects/escuelita/img2.avif", "../projects/escuelita/img3.avif", "../projects/escuelita/img4.avif"], 
+    images: ["../projects/escuelita/img1.png", "../projects/escuelita/img2.png", "../projects/escuelita/img3.png", "../projects/escuelita/img4.png"], 
     tags: ["Web App", "Education", "CRM","Saas"],
     category: "Web Development"
   },
   {
     title: "Kaput!",
     description: "Advanced control application for poultry farms, with real-time monitoring, automated feeding systems, and analytics dashboard.",
-    images: ["../projects/Kaput/img1.avif","../projects/Kaput/img2.avif","../projects/Kaput/img3.avif"],
+    images: ["../projects/Kaput/img1.png","../projects/Kaput/img2.png","../projects/Kaput/img3.png"],
     tags: ["IoT", "Agriculture", "Dashboard","Under cosntruction"],
     category: "IoT Solutions"
   },
   {
     title: "Equipo Guru",
     description: "A modern SSR website implementation with dynamic content management and optimized performance for a professional services firm.",
-    images: ["../projects/EquipoGuru/img1.avif", "../projects/EquipoGuru/img2.avif","../projects/EquipoGuru/img3.avif"],
+    images: ["../projects/EquipoGuru/img1.png", "../projects/EquipoGuru/img2.png","../projects/EquipoGuru/img3.png"],
     tags: ["Web Development", "SSR", "UX Design"],
     category: "Web Development"
   },
   {
     title: "Domus",
     description: "CRM for real state administration. ",
-    images: ["../projects/Domus/img1.avif"],
+    images: ["../projects/Domus/img1.png"],
     tags: ["Real State", "CRM", "Web App","Under cosntruction"],
     category: "Data Visualization"
   },
   {
     title: "Baires Vive",
     description: "Design implementation in existing project. We took the desing, the existing code and made it work together.",
-    images: ["../projects/BairesVive/img1.avif", "../projects/BairesVive/img2.avif","../projects/BairesVive/img3.avif"],
+    images: ["../projects/BairesVive/img1.png", "../projects/BairesVive/img2.png","../projects/BairesVive/img3.png"],
     tags: ["Design Integration", "Frontend Development", "UI Implementation"],
     category: "Mobile Development"
   },
