@@ -18,17 +18,31 @@
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
       <NuxtLink to="portfolio">
-      <div class="group rounded-lg overflow-hidden transition-all hover:-translate-y-2">
-        <div class="h-48 bg-gradient-to-r from-[#E1FF2D]/10 to-[#E1FF2D]/20 group-hover:from-[#E1FF2D]/20 group-hover:to-[#E1FF2D]/30"></div>
-        <div class="p-4 bg-gray-800">
-          <h3 class="text-[#E1FF2D] font-semibold mb-1">Escuelita Virtual</h3>
-          <p class="text-gray-300 text-sm">A Saas CRM for education</p>
+        <div class="group rounded-lg overflow-hidden transition-all hover:-translate-y-2">
+          <div class="h-48 bg-gradient-to-r from-[#E1FF2D]/10 to-[#E1FF2D]/20 group-hover:from-[#E1FF2D]/20 group-hover:to-[#E1FF2D]/30">
+            <NuxtImg 
+              src="./img/projects/escuelita/img1.png" 
+              alt="Escuelita crm 1" 
+              class="w-full h-full object-cover"
+              format="avif"
+            />
+          </div>
+          <div class="p-4 bg-gray-800">
+            <h3 class="text-[#E1FF2D] font-semibold mb-1">Escuelita Virtual</h3>
+            <p class="text-gray-300 text-sm">A Saas CRM for education</p>
+          </div>
         </div>
-      </div>
-    </NuxtLink>
+      </NuxtLink>
     <NuxtLink to="portfolio">
       <div class="group rounded-lg overflow-hidden transition-all hover:-translate-y-2">
-        <div class="h-48 bg-gradient-to-r from-[#E1FF2D]/20 to-[#E1FF2D]/30 group-hover:from-[#E1FF2D]/30 group-hover:to-[#E1FF2D]/40"></div>
+        <div class="h-48 bg-gradient-to-r from-[#E1FF2D]/20 to-[#E1FF2D]/30 group-hover:from-[#E1FF2D]/30 group-hover:to-[#E1FF2D]/40">
+          <NuxtImg 
+              src="./img/projects/Kaput/img1.png" 
+              alt="Kaput crm 1" 
+              class="w-full h-full object-cover"
+              format="avif"
+            />
+        </div>
         <div class="p-4 bg-gray-800">
           <h3 class="text-[#E1FF2D] font-semibold mb-1">Kaput!</h3>
           <p class="text-gray-300 text-sm">A control aplication for Chicken Farmes</p>
@@ -37,7 +51,14 @@
     </NuxtLink>
     <NuxtLink to="portfolio">
       <div class="group rounded-lg overflow-hidden transition-all hover:-translate-y-2">
-        <div class="h-48 bg-gradient-to-r from-[#E1FF2D]/30 to-[#E1FF2D]/40 group-hover:from-[#E1FF2D]/40 group-hover:to-[#E1FF2D]/50"></div>
+        <div class="h-48 bg-gradient-to-r from-[#E1FF2D]/30 to-[#E1FF2D]/40 group-hover:from-[#E1FF2D]/40 group-hover:to-[#E1FF2D]/50">
+          <NuxtImg 
+              src="./img/projects/EquipoGuru/img1.png" 
+              alt="Equipo guru ssr 1" 
+              class="w-full h-full object-cover"
+              format="avif"
+            />
+        </div>
         <div class="p-4 bg-gray-800">
           <h3 class="text-[#E1FF2D] font-semibold mb-1">Equipo Guru</h3>
           <p class="text-gray-300 text-sm">A SSR web site implementation</p>
@@ -46,10 +67,17 @@
     </NuxtLink>
     <NuxtLink to="portfolio">
       <div class="group rounded-lg overflow-hidden transition-all hover:-translate-y-2">
-        <div class="h-48 bg-gradient-to-r from-[#E1FF2D]/40 to-[#E1FF2D]/50 group-hover:from-[#E1FF2D]/50 group-hover:to-[#E1FF2D]/60"></div>
+        <div class="h-48 bg-gradient-to-r from-[#E1FF2D]/40 to-[#E1FF2D]/50 group-hover:from-[#E1FF2D]/50 group-hover:to-[#E1FF2D]/60">
+        <NuxtImg 
+              src="./img/projects/BairesVive/img1.png" 
+              alt="BairesVive Integration 1" 
+              class="w-full h-full object-cover"
+              format="avif"
+            />
+          </div>
         <div class="p-4 bg-gray-800">
-          <h3 class="text-[#E1FF2D] font-semibold mb-1">Project Name</h3>
-          <p class="text-gray-300 text-sm">Brief project description</p>
+          <h3 class="text-[#E1FF2D] font-semibold mb-1">BairesVive</h3>
+          <p class="text-gray-300 text-sm">Design Integration</p>
         </div>
       </div>
     </NuxtLink>
