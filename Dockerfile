@@ -4,7 +4,7 @@ WORKDIR /app
 
 # Install dependencies
 COPY package*.json ./
-RUN npm ci --only=production
+RUN npm ci
 
 # Copy project files
 COPY . .
@@ -12,17 +12,9 @@ COPY . .
 # Build the application
 RUN npm run build
 
-# Set production environment and memory limits
-ENV NODE_ENV=production
-
-
-# Optimize for single process in container
-ENV NITRO_PRESET=node-server
-ENV NUXT_INSTANCE_COUNT=1
 
 # Expose the port
 EXPOSE 7000
 
-# Use a process manager to handle crashes
-
+# Start the application
 CMD ["node", "./.output/server/index.mjs"]
