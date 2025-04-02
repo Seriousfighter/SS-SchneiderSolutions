@@ -14,7 +14,7 @@ RUN npm run build
 
 # Set production environment and memory limits
 ENV NODE_ENV=production
-ENV NODE_OPTIONS="--max-old-space-size=512"
+
 
 # Optimize for single process in container
 ENV NITRO_PRESET=node-server
