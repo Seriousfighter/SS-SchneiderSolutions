@@ -19,8 +19,13 @@ services:
     networks:
       - nuxt-network
     restart: unless-stopped
-
+    volumes:
+      - nuxt-image-cache:/app/.nuxt/image/cache
 
 networks:
   nuxt-network:
     driver: bridge
+    
+volumes:
+  nuxt-image-cache:
+    driver: local

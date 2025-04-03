@@ -1,18 +1,25 @@
-FROM node:20-alpine
-
+# Build Stage
+FROM node:22-alpine AS build
 WORKDIR /app
 
-# Install dependencies
+# Copy package.json and lockfile
 COPY package*.json ./
+
+# Install dependencies
 RUN npm ci
 
-# Copy project files
-COPY . .
+# Copy the entire project
+COPY . ./
 
-# Build the application
+# Build the project
 RUN npm run build
 
+# Production Stage
+FROM node:22-alpine
+WORKDIR /app
 
+# Copy only the built output from the build stage
+COPY --from=build /app/.output/ ./
 # Expose the port
 EXPOSE 7000
 
