@@ -8,8 +8,10 @@
         :src="imagePath"
         :alt="title"
         class="w-full h-full object-cover"
-        placeholder
-        format="avif"
+        placeholder        
+        format="webp"
+        quality="70"
+        loading="eager"
         @error="handleImageError"
       />
       
