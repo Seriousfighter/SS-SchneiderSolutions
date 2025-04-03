@@ -89,21 +89,21 @@ const projects = [
   {
     title: "Equipo Guru",
     description: "A modern SSR website implementation with dynamic content management and optimized performance for a professional services firm.",
-    images: ["../projects/EquipoGuru/img1.png", "../projects/EquipoGuru/img2.png","../projects/EquipoGuru/img3.png"],
+    images: ["../projects/EquipoGuru/img1.webp", "../projects/EquipoGuru/img2.webp","../projects/EquipoGuru/img3.webp"],
     tags: ["Web Development", "SSR", "UX Design"],
     category: "Web Development"
   },
   {
     title: "Domus",
     description: "CRM for real state administration. ",
-    images: ["../projects/Domus/img1.png"],
+    images: ["../projects/Domus/img1.webp"],
     tags: ["Real State", "CRM", "Web App","Under cosntruction"],
     category: "Data Visualization"
   },
   {
     title: "Baires Vive",
     description: "Design implementation in existing project. We took the desing, the existing code and made it work together.",
-    images: ["../projects/BairesVive/img1.png", "../projects/BairesVive/img2.png","../projects/BairesVive/img3.png"],
+    images: ["../projects/BairesVive/img1.webp", "../projects/BairesVive/img2.webp","../projects/BairesVive/img3.webp"],
     tags: ["Design Integration", "Frontend Development", "UI Implementation"],
     category: "Mobile Development"
   },
