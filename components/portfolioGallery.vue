@@ -57,7 +57,7 @@
       <div class="group rounded-lg overflow-hidden transition-all hover:-translate-y-2">
         <div class="h-48 bg-gradient-to-r from-[#E1FF2D]/30 to-[#E1FF2D]/40 group-hover:from-[#E1FF2D]/40 group-hover:to-[#E1FF2D]/50">
           <NuxtImg 
-              src="./img/projects/EquipoGuru/img1.png" 
+              src="./img/projects/EquipoGuru/img1.webp" 
               alt="Equipo guru ssr 1" 
               class="w-full h-full object-cover"
               format="webp"
@@ -75,7 +75,7 @@
       <div class="group rounded-lg overflow-hidden transition-all hover:-translate-y-2">
         <div class="h-48 bg-gradient-to-r from-[#E1FF2D]/40 to-[#E1FF2D]/50 group-hover:from-[#E1FF2D]/50 group-hover:to-[#E1FF2D]/60">
         <NuxtImg 
-              src="./img/projects/BairesVive/img1.png" 
+              src="./img/projects/BairesVive/img1.webp" 
               alt="BairesVive Integration 1" 
               class="w-full h-full object-cover"
               format="webp"

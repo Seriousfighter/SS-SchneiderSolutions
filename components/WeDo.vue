@@ -18,21 +18,21 @@
     </div>
     
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-      <NuxtLink to="/services/web-development">
+      <NuxtLink to="services">
         <div class="bg-gray-800/50 hover:bg-gray-800/70 p-6 rounded-lg transition-all hover:-translate-y-2 border border-gray-700 hover:border-[#E1FF2D]/20">
           <div class="text-4xl mb-4">💻</div>
           <h3 class="text-[#E1FF2D] text-xl font-bold mb-3">Web Development</h3>
           <p class="text-gray-300">Custom websites and web applications built with modern technologies.</p>
         </div>
       </NuxtLink>
-      <NuxtLink to="/services/web-development">
+      <NuxtLink to="services">
         <div class="bg-gray-800/50 hover:bg-gray-800/70 p-6 rounded-lg transition-all hover:-translate-y-2 border border-gray-700 hover:border-[#E1FF2D]/20">
           <div class="text-4xl mb-4">📱</div>
           <h3 class="text-[#E1FF2D] text-xl font-bold mb-3">Mobile Apps</h3>
           <p class="text-gray-300">Native and cross-platform mobile applications for iOS and Android.</p>
         </div>
       </NuxtLink>
-      <NuxtLink to="/services/web-development">
+      <NuxtLink to="services">
         <div class="bg-gray-800/50 hover:bg-gray-800/70 p-6 rounded-lg transition-all hover:-translate-y-2 border border-gray-700 hover:border-[#E1FF2D]/20">
           <div class="text-4xl mb-4">⚙️</div>
           <h3 class="text-[#E1FF2D] text-xl font-bold mb-3">Tech Consulting</h3>
