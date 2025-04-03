@@ -13,7 +13,7 @@ services:
       - PORT=7000
       - NITRO_HOST=0.0.0.0
       - NITRO_PORT=7000
-      - APP_NAME=${APP_NAME:-Equipo.Guru}
+      - APP_NAME=${APP_NAME:-ss-schneiderservices.com}
       - API_BASE_URL=${API_BASE_URL:-http://localhost:7000/api}
       - AUTH_SECRET=${AUTH_SECRET:-your-secret-key}
     networks:
@@ -25,7 +25,7 @@ services:
 networks:
   nuxt-network:
     driver: bridge
-    
+
 volumes:
   nuxt-image-cache:
     driver: local

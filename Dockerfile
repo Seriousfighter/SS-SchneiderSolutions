@@ -24,4 +24,4 @@ COPY --from=build /app/.output/ ./
 EXPOSE 7000
 
 # Start the application
-CMD ["node", "./.output/server/index.mjs"]
+CMD ["node", "./server/index.mjs"]
