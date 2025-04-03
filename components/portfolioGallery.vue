@@ -22,9 +22,10 @@
           <div class="h-48 bg-gradient-to-r from-[#E1FF2D]/10 to-[#E1FF2D]/20 group-hover:from-[#E1FF2D]/20 group-hover:to-[#E1FF2D]/30">
             <NuxtImg 
               src="./img/projects/escuelita/img1.png" 
-              alt="Escuelita crm 1" 
               class="w-full h-full object-cover"
-              format="avif"
+              format="webp"
+              quality="70"
+              loading="eager"
             />
           </div>
           <div class="p-4 bg-gray-800">
@@ -40,7 +41,9 @@
               src="./img/projects/Kaput/img1.png" 
               alt="Kaput crm 1" 
               class="w-full h-full object-cover"
-              format="avif"
+              format="webp"
+              quality="70"
+              loading="eager"
             />
         </div>
         <div class="p-4 bg-gray-800">
@@ -56,7 +59,9 @@
               src="./img/projects/EquipoGuru/img1.png" 
               alt="Equipo guru ssr 1" 
               class="w-full h-full object-cover"
-              format="avif"
+              format="webp"
+              quality="70"
+              loading="eager"
             />
         </div>
         <div class="p-4 bg-gray-800">
@@ -72,7 +77,9 @@
               src="./img/projects/BairesVive/img1.png" 
               alt="BairesVive Integration 1" 
               class="w-full h-full object-cover"
-              format="avif"
+              format="webp"
+              quality="70"
+              loading="eager"
             />
           </div>
         <div class="p-4 bg-gray-800">
