@@ -75,14 +75,14 @@ const projects = [
     title: "Escuelita Virtual",
     description: "A comprehensive SaaS CRM solution for educational institutions, featuring student management, grading systems, and parent communication tools.",
     // Just pass the file names, not full paths
-    images: ["../projects/escuelita/img1.png", "../projects/escuelita/img2.png", "../projects/escuelita/img3.png", "../projects/escuelita/img4.png"], 
+    images: ["../projects/escuelita/img1.webp", "../projects/escuelita/img2.webp", "../projects/escuelita/img3.webp", "../projects/escuelita/img4.webp"], 
     tags: ["Web App", "Education", "CRM","Saas"],
     category: "Web Development"
   },
   {
     title: "Kaput!",
     description: "Advanced control application for poultry farms, with real-time monitoring, automated feeding systems, and analytics dashboard.",
-    images: ["../projects/Kaput/img1.png","../projects/Kaput/img2.png","../projects/Kaput/img3.png"],
+    images: ["../projects/Kaput/img1.webp","../projects/Kaput/img2.webp","../projects/Kaput/webp.png"],
     tags: ["IoT", "Agriculture", "Dashboard","Under cosntruction"],
     category: "IoT Solutions"
   },
