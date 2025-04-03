@@ -21,11 +21,12 @@
         <div class="group rounded-lg overflow-hidden transition-all hover:-translate-y-2">
           <div class="h-48 bg-gradient-to-r from-[#E1FF2D]/10 to-[#E1FF2D]/20 group-hover:from-[#E1FF2D]/20 group-hover:to-[#E1FF2D]/30">
             <NuxtImg 
-              src="./img/projects/escuelita/img1.png" 
+              src="./img/projects/escuelita/img1.webp" 
               class="w-full h-full object-cover"
               format="webp"
               quality="70"
               loading="eager"
+              alt="Escuelita Virtual 1"
             />
           </div>
           <div class="p-4 bg-gray-800">
@@ -38,7 +39,7 @@
       <div class="group rounded-lg overflow-hidden transition-all hover:-translate-y-2">
         <div class="h-48 bg-gradient-to-r from-[#E1FF2D]/20 to-[#E1FF2D]/30 group-hover:from-[#E1FF2D]/30 group-hover:to-[#E1FF2D]/40">
           <NuxtImg 
-              src="./img/projects/Kaput/img1.png" 
+              src="./img/projects/Kaput/img1.webp" 
               alt="Kaput crm 1" 
               class="w-full h-full object-cover"
               format="webp"

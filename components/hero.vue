@@ -65,6 +65,7 @@
                 quality="70"
                 loading="eager"
                 class="w-full h-full object-cover" 
+                alt="Helix 1"
               />
               </div>
               
@@ -83,6 +84,7 @@
                   quality="70"
                   loading="eager"
                   class="w-full h-full object-cover" 
+                  alt="Helix 2"
                 />
               </div>
               
@@ -100,6 +102,7 @@
                 quality="70"
                 loading="eager"
                 class="w-full h-full object-cover" 
+                alt="Helix 3"
               />
               </div>
             </div>
