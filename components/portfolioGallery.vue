@@ -26,6 +26,7 @@
               format="webp"
               quality="70"
               loading="eager"
+              alt="Escuelita Virtual 1"
             />
           </div>
           <div class="p-4 bg-gray-800">
