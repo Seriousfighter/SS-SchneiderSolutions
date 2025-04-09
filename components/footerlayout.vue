@@ -43,19 +43,16 @@
           <h3 class="text-white font-semibold text-lg mb-4">Our Services</h3>
           <ul class="space-y-3">
             <li>
-              <a href="#" class="text-gray-400 hover:text-[#E1FF2D] transition-colors">Web Development</a>
+              <a href="#" @click.prevent="navigateToServices" class="text-gray-400 hover:text-[#E1FF2D] transition-colors">Web Development</a>
             </li>
             <li>
-              <a href="#" class="text-gray-400 hover:text-[#E1FF2D] transition-colors">Mobile Applications</a>
+              <a href="#" @click.prevent="navigateToServices" class="text-gray-400 hover:text-[#E1FF2D] transition-colors">Mobile Applications</a>
             </li>
             <li>
-              <a href="#" class="text-gray-400 hover:text-[#E1FF2D] transition-colors">UX/UI Design</a>
+              <a href="#" @click.prevent="navigateToServices" class="text-gray-400 hover:text-[#E1FF2D] transition-colors">UX/UI Design</a>
             </li>
             <li>
-              <a href="#" class="text-gray-400 hover:text-[#E1FF2D] transition-colors">Tech Consulting</a>
-            </li>
-            <li>
-              <a href="#" class="text-gray-400 hover:text-[#E1FF2D] transition-colors">Cloud Services</a>
+              <a href="#" @click.prevent="navigateToServices" class="text-gray-400 hover:text-[#E1FF2D] transition-colors">Tech Consulting</a>
             </li>
           </ul>
         </div>
@@ -65,7 +62,7 @@
           <h3 class="text-white font-semibold text-lg mb-4">Resources</h3>
           <ul class="space-y-3">
             <li>
-              <a href="#" class="text-gray-400 hover:text-[#E1FF2D] transition-colors">Portfolio</a>
+              <NuxtLink to="portfolio" class="text-gray-400 hover:text-[#E1FF2D] transition-colors">Portfolio</NuxtLink>
             </li>
             <li>
               <a href="#" class="text-gray-400 hover:text-[#E1FF2D] transition-colors">Case Studies</a>
@@ -140,3 +137,22 @@
     </div>
   </footer>
 </template>
+
+<script setup>
+const route = useRoute()
+const router = useRouter()
+
+// Function to navigate to services or smooth scroll if already there
+const navigateToServices = () => {
+  if (route.path === '/services') {
+    // Already on services page, scroll to top
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    })
+  } else {
+    // Navigate to services page
+    router.push('/services')
+  }
+}
+</script>

@@ -1,6 +1,6 @@
 <template>
   <NuxtLink :to="page"
-    class="transition-all duration-300 border-b-2 border-green-ss  hover:border-[#8fff2d]"
+    class="transition-all duration-300 border-b-2 border-green-ss hover:border-[#8fff2d]"
     :class="{'pulse-effect': isActive}"
     @click="handleClick">
     <slot></slot>
@@ -35,12 +35,18 @@ const handleClick = (event: MouseEvent) => {
 <style scoped>
 .pulse-effect {
   position: relative;
-  animation: pulse 2s infinite;
   font-weight: bold;
   color: #E1FF2D; /* Your green-ss color */
   text-shadow: 0 0 8px rgba(225, 255, 45, 0.5);
   border-bottom-width: 4px;
   border-color: #8fff2d;
+}
+
+/* Only apply animation on screens wider than 768px (desktop) */
+@media (min-width: 768px) {
+  .pulse-effect {
+    animation: pulse 2s infinite;
+  }
 }
 
 @keyframes pulse {
