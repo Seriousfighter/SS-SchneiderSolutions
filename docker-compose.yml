@@ -16,6 +16,8 @@ services:
       - APP_NAME=${APP_NAME:-ss-schneiderservices.com}
       - API_BASE_URL=${API_BASE_URL:-http://localhost:7000/api}
       - AUTH_SECRET=${AUTH_SECRET:-your-secret-key}
+      - GMAIL_USER=${GMAIL_USER}
+      - GMAIL_APP_PASSWORD=${GMAIL_APP_PASSWORD}
     networks:
       - nuxt-network
     restart: unless-stopped
