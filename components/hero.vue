@@ -1,52 +1,35 @@
 <template>
-  <div :class="[
-    'w-full transition-all duration-1000',
-    isScrolled ? 'min-h-fit' : 'min-h-screen'
-  ]">
+  <div class="w-full min-h-screen">
     <!-- Hero Section -->
-    <section class="sticky top-0 z-10 w-full flex items-center px-4 md:px-8 overflow-hidden"
-      :class="[
-        'transition-all duration-1000 ease-in-out',
-        isScrolled ? 'min-h-0 py-4' : 'min-h-screen py-8'
-      ]">
+    <section class="w-full flex items-center px-4 md:px-8 overflow-hidden min-h-screen py-8">
       <div class="w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mt-0 lg:gap-12 items-center">
         <!-- Left Side: Content -->
-        <div :class="[ 
-          'transition-all duration-1000 ease-out transform', 
-          isScrolled ? 'md:col-span-2 backdrop-blur-xl mt-0' : ''
-        ]">
-          <div :class="['transition-all duration-1000', isScrolled ? 'transform-none' : '']">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 transition-all duration-700"
-              :class="{ 'md:text-3xl lg:text-4xl mb-4': isScrolled }">
+        <div>
+          <div>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
               <span class="text-[#E1FF2D]">SS</span>-SCHNEIDER SERVICES
             </h1>
-            <p class="text-lg text-gray-300 mb-8 max-w-xl transition-all duration-700"
-              :class="{ 'md:text-base mb-4': isScrolled }">
+            <p class="text-lg text-gray-300 mb-8 max-w-xl">
               Expert technical services for modern businesses. 
               We deliver innovative solutions tailored to your unique needs.
             </p>
-            <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 transition-all duration-700">
+            <div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
               <NuxtLink to="services">
-              <button class="px-6 py-3 bg-[#E1FF2D] text-black font-semibold rounded hover:bg-[#d4f909] transform hover:-translate-y-1 transition-all">
-                Our Services
-              </button>
-            </NuxtLink>
+                <button class="px-6 py-3 bg-[#E1FF2D] text-black font-semibold rounded hover:bg-[#d4f909] transform hover:-translate-y-1 transition-all">
+                  Our Services
+                </button>
+              </NuxtLink>
               <NuxtLink to="contact">
-              <button class="px-6 py-3 border-2 border-[#E1FF2D] text-[#E1FF2D] font-semibold rounded hover:bg-[#E1FF2D]/10 transform hover:-translate-y-1 transition-all">
-                Contact Us
-              </button>
-            </NuxtLink>
+                <button class="px-6 py-3 border-2 border-[#E1FF2D] text-[#E1FF2D] font-semibold rounded hover:bg-[#E1FF2D]/10 transform hover:-translate-y-1 transition-all">
+                  Contact Us
+                </button>
+              </NuxtLink>
             </div>
           </div>
         </div>
         
-        <!-- Right Side: Image Carousel - Will smoothly disappear when scrolled -->
-        <div :class="[
-          'transition-all duration-1000 transform ease-in-out', 
-          isScrolled 
-            ? 'md:opacity-0 md:translate-x-1/4 md:scale-90 md:invisible md:h-0 md:w-0 md:overflow-hidden' 
-            : 'md:translate-x-0 md:scale-100'
-        ]">
+        <!-- Right Side: Image Carousel -->
+        <div>
           <!-- Carousel Container -->
           <div class="rounded-xl overflow-hidden border-2 border-[#E1FF2D]/20 aspect-square relative bg-gradient-to-br from-gray-800 to-gray-900">
             <!-- Carousel Images -->
@@ -57,16 +40,16 @@
                 class="absolute inset-0 w-full h-full transition-opacity duration-700"
                 :class="activeSlide === 0 ? 'opacity-100' : 'opacity-0'"
               >
-              <NuxtImg 
-                src="/img/helix.webp" 
-                width="600"
-                height="400"
-                format="webp"
-                quality="70"
-                loading="eager"
-                class="w-full h-full object-cover" 
-                alt="Helix 1"
-              />
+                <NuxtImg 
+                  src="/img/helix.webp" 
+                  width="600"
+                  height="400"
+                  format="webp"
+                  quality="70"
+                  loading="eager"
+                  class="w-full h-full object-cover" 
+                  alt="Helix 1"
+                />
               </div>
               
               <!-- Image 2 -->
@@ -75,8 +58,7 @@
                 class="absolute inset-0 w-full h-full transition-opacity duration-700"
                 :class="activeSlide === 1 ? 'opacity-100' : 'opacity-0'"
               >
-                
-              <NuxtImg 
+                <NuxtImg 
                   src="/img/helix2.webp" 
                   width="600"
                   height="400"
@@ -94,16 +76,16 @@
                 class="absolute inset-0 w-full h-full transition-opacity duration-700"
                 :class="activeSlide === 2 ? 'opacity-100' : 'opacity-0'"
               >
-              <NuxtImg 
-                src="/img/helix3.webp" 
-                width="600"
-                height="400"
-                format="webp"
-                quality="70"
-                loading="eager"
-                class="w-full h-full object-cover" 
-                alt="Helix 3"
-              />
+                <NuxtImg 
+                  src="/img/helix3.webp" 
+                  width="600"
+                  height="400"
+                  format="webp"
+                  quality="70"
+                  loading="eager"
+                  class="w-full h-full object-cover" 
+                  alt="Helix 3"
+                />
               </div>
             </div>
             
@@ -164,17 +146,13 @@
 <script lang="ts" setup>
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 
-// State for scrolling effect
-const isScrolled = ref(false);
+// Remove isScrolled state, keep carousel functionality
 const activeSlide = ref(0);
 const carouselCaptions = [
   "Technology solutions for the modern era",
   "Innovative digital services for your business",
   "Expert development and consulting"
 ];
-
-// Make isScrolled available to parent components
-defineExpose({ isScrolled });
 
 // Carousel functionality
 function nextSlide() {
@@ -188,44 +166,14 @@ function prevSlide() {
 // Auto-advance carousel
 let carouselInterval: ReturnType<typeof setInterval>;
 
-// Scroll handler with throttling for smoother transitions
-let lastScrollTime = 0;
-function handleScroll() {
-  const now = Date.now();
-  if (now - lastScrollTime > 50) { // Throttle to every 50ms
-    lastScrollTime = now;
-    
-    // Get scroll position
-    const scrollPosition = window.scrollY || document.documentElement.scrollTop;
-    
-    // Use smooth transition with a threshold
-    if (scrollPosition > 100 && !isScrolled.value) {
-      isScrolled.value = true;
-    } else if (scrollPosition < 50 && isScrolled.value) {
-      isScrolled.value = false;
-    }
-  }
-}
-
 onMounted(() => {
-  // Add event listener
-  window.addEventListener('scroll', handleScroll, { passive: true });
-  
-  // Initial scroll check (in case page loads scrolled down)
-  handleScroll();
-  
   // Start carousel auto-rotation
   carouselInterval = setInterval(() => {
-    if (!isScrolled.value) {
-      nextSlide();
-    }
+    nextSlide();
   }, 5000);
 });
 
 onBeforeUnmount(() => {
-  // Clean up event listener
-  window.removeEventListener('scroll', handleScroll);
-  
   // Clear auto-rotation interval
   clearInterval(carouselInterval);
 });
