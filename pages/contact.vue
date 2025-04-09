@@ -82,6 +82,16 @@
               Thank you! Your message has been sent successfully. We'll get back to you soon.
             </p>
           </div>
+
+          <!-- Error Message -->
+          <div v-if="submitError" class="mt-6 p-4 bg-red-900/20 border border-red-700/30 rounded-md">
+            <p class="text-red-400 flex items-center">
+              <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              {{ submitError }}
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -106,6 +116,7 @@ const errors = reactive({
 });
 const isSubmitting = ref(false);
 const formSubmitted = ref(false);
+const submitError = ref('');
 
 // Form submission
 const submitForm = async () => {
@@ -113,6 +124,7 @@ const submitForm = async () => {
   errors.name = '';
   errors.email = '';
   errors.message = '';
+  submitError.value = '';
   
   // Validate form
   let isValid = true;
@@ -141,22 +153,34 @@ const submitForm = async () => {
   try {
     isSubmitting.value = true;
     
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1500));
+    // Send form data to API endpoint
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(form)
+    });
     
-    // Reset form after success
-    form.name = '';
-    form.email = '';
-    form.message = '';
-    formSubmitted.value = true;
+    const result = await response.json();
     
-    // Hide success message after 5 seconds
-    setTimeout(() => {
-      formSubmitted.value = false;
-    }, 5000);
+    if (result.success) {
+      // Reset form after success
+      form.name = '';
+      form.email = '';
+      form.message = '';
+      formSubmitted.value = true;
+      
+      // Hide success message after 5 seconds
+      setTimeout(() => {
+        formSubmitted.value = false;
+      }, 5000);
+    } else {
+      submitError.value = result.message || 'Failed to send message. Please try again.';
+    }
   } catch (error) {
     console.error('Error submitting form:', error);
-    // Handle error
+    submitError.value = 'An unexpected error occurred. Please try again.';
   } finally {
     isSubmitting.value = false;
   }
