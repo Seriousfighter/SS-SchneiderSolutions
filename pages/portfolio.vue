@@ -31,7 +31,6 @@
         </button>
       </div>
     </div>
-
     <!-- Projects Grid -->
     <div class="max-w-6xl mx-auto">
       <div 
