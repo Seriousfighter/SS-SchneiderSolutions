@@ -60,6 +60,21 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en'
       },
+      script: [
+        {
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-MX5SPGB8NP',
+          async: true
+        },
+        {
+          children: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-MX5SPGB8NP');
+          `,
+          type: 'text/javascript'
+        }
+      ],
       meta: [
         { name: 'description', content: 'SS-SchneiderServices delivers innovative technical solutions for modern businesses. Expert technology services tailored to your unique needs.' },
         { name: 'keywords', content: 'technology services, IT solutions, software development, business technology, technical support, custom solutions' },
